@@ -1,0 +1,518 @@
+.contenedor_Busquedas{
+	width: 65%;
+	min-width: 550px;
+	height: 310px;
+	margin: 25px auto;
+	border: none;
+	box-shadow: 0 0.1rem 0.125rem 0.1rem rgb(0 0 0 / 30%),
+    				    0 0 0 0.1rem rgb(0 0 0 / 15%);
+	background-color: #eee;
+}
+
+
+
+.contenedor_Busquedas .titulo_busqueda{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: horizontal;
+}
+
+
+.contenedor_Busquedas .titulo_busqueda h3{
+	font-size: 10px;
+	text-align: center;
+	margin: 0;
+	cursor: pointer;
+	font-family: sans-serif;
+	padding: 10px 5px;
+	color: #235a81;
+	background-image: linear-gradient(to bottom, #eaf0f8, #eaf0f8);
+	outline:none;
+	border: 1px solid #aaa;
+}
+
+.contenedor_Busquedas .titulo_busqueda h3:hover{
+	filter: contrast(110%);
+}
+
+.contenedor_Convocatorias{
+	padding: 20px 10px 0px 10px;
+	text-align: center;
+
+}
+
+
+.contenedor_Convocatorias form#form_palabra{
+	display: none;
+}
+
+
+.contenedor_Convocatorias .input_palabra_clave input[type="text"]{
+	font-family: Cambria;
+	font-size: 15px;
+	width: 60%;
+	text-align: left;
+	margin: 10px;
+	border: 1px solid #bbb;
+	padding: 7px 20px;
+	border-radius: 4px;
+
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #808080;
+    -moz-box-shadow: 2px 2px 0px #808080;
+    box-shadow: 2px 2px 0px #808080;
+}
+
+
+
+.contenedor_select{
+	display: block;
+	height: 20px;
+	margin: 0px 0px 30px 0px;
+	z-index: 3;
+	
+}
+
+
+
+#form_palabra select{
+	font-family: Cambria;
+	width: fit-content;
+	font-size: 15px;
+	cursor: pointer;
+	padding: 7px 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #808080;
+    -moz-box-shadow: 2px 2px 0px #808080;
+    box-shadow: 2px 2px 0px #808080;
+}
+
+
+
+#form_criterios select{
+	width: 90%;
+	font-size: 15px;
+	padding: 5px 5px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	background-color: #fff;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #808080;
+    -moz-box-shadow: 2px 2px 0px #808080;
+    box-shadow: 2px 2px 0px #808080;
+    transition-duration: 0.6s;
+}
+
+
+#form_criterios select:hover,
+#form_palabra select:hover{
+	background: #ddd;
+
+}
+
+.contenedor_Convocatorias select:focus{
+	position: relative;
+	z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor_input input{
+	font-family: monospace;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	background-image: linear-gradient(to bottom, #3498db, #294557);
+    
+}
+
+.contenedor_input input:hover{
+	background: #3cb0fd;
+}
+
+
+
+.contenedor_fechas div{
+	margin: 0px 10px;
+	display: inline;
+}
+
+.contenedor_fechas label{
+	font-family: Cambria;
+	font-size: 18px;
+	color: #333;
+}
+
+.contenedor_fechas input.fechaDesde,
+.contenedor_fechas input.fechaHasta{
+	font-size: 15px;
+	padding: 5px 5px;
+
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #808080;
+    -moz-box-shadow: 2px 2px 0px #808080;
+    box-shadow: 2px 2px 0px #808080;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabla_resultados{
+	overflow-y:auto;
+	overflow-x:auto;
+	min-width: 850px;
+	max-width: 95%;
+	min-height: 50px;
+	max-height: 400px;
+	margin: 50px auto 0px auto;
+	border:1px solid black;
+	box-shadow: 3px -5px 12px 5px rgba(0,0,0,0.67);
+	-webkit-box-shadow: 3px -5px 12px 5px rgba(0,0,0,0.67);
+	-moz-box-shadow: 3px -5px 12px 5px rgba(0,0,0,0.67);
+}
+
+.tabla_resultados table{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	text-align: left;
+
+}
+
+.tabla_resultados th{
+	height: 30px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to right, rgb(67, 195, 248) , rgb(49, 68, 162));
+	position: sticky;
+  	top: 0px;
+  	z-index: 2;
+}
+
+
+.tabla_resultados .titulos_filas td{
+	font-family: Rockwell;
+	padding: 7px 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	color: #5f4cf3;
+	text-align: left;
+  	background-color: #ffffcc;
+  	opacity: 90%;
+  	font-size: 14px;
+  	position: sticky;
+  	top: 30px;
+  	z-index: 2;
+  	overflow-wrap: break-word;
+}
+
+
+.tabla_resultados .filas td{
+	font-family: Cambria;
+	font-size: 12px;
+	padding: 10px 10px;
+	text-align: left;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.tabla_resultados .filas:nth-child(even){
+	background-color: #e6e6e6;
+}
+
+.tabla_resultados .filas:nth-child(odd){
+	background-color: #fff;
+}
+
+
+.tabla_resultados .filas:hover{
+	background:#cce;
+}
+
+.tabla_resultados .filas:focus{
+ 	background-color: #9f9fdf;
+}
+
+
+
+
+
+.tabla_resultados .filas td#UVT{
+	min-width: 100px;
+	font-size: 15px;
+	font-style: bold;
+}
+
+.tabla_resultados .filas td#Convocatoria{
+	min-width: 250px;
+	max-width: 280px;
+}
+
+.tabla_resultados .filas td#Codigo{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Director{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Estado{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Expte_Pago{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Resol_Pago{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Expte_Rend{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Pase_DGA{
+	min-width: 150px;
+}
+
+.tabla_resultados .filas td#Intimar{
+	min-width: 100px;
+	text-align: center;
+}
+
+.tabla_resultados .filas td#Observacion{
+	min-width: 400px;
+}
+
+.tabla_resultados .filas td#link{
+	min-width: 50px;
+	padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabla_cantidades{
+	min-width: 850px;
+	max-width: 95%;
+	margin: 10px auto 0px auto;
+}
+
+.tabla_cantidades table{
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	margin-bottom: 50px;
+	box-shadow: 3px 5px 12px 5px rgba(0,0,0,0.67);
+	-webkit-box-shadow: 3px 5px 12px 5px rgba(0,0,0,0.67);
+	-moz-box-shadow: 3px 5px 12px 5px rgba(0,0,0,0.67);	
+	border-collapse: collapse;
+	border-top: 1px solid #fff;
+}
+
+
+
+.tabla_cantidades table .titulo_total_resultados,
+.tabla_cantidades table .titulo_total_vencidos{
+	color:#ccc;
+	font-style: bold;
+	font-size: 20px;
+}
+
+.tabla_cantidades table .fila_estados_totales,
+.tabla_cantidades table .fila_vencidos{
+	border:1px solid black;
+	background: rgba(71, 113, 122, 0.7);
+	color: #eee;
+}
+
+
+
+.tabla_cantidades table .fila_estados_totales td,
+.tabla_cantidades table .fila_vencidos td{
+	padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circulo{
+	width: 12px;
+	height: 12px;
+	margin-right:10px;
+	position: relative;
+	top: 1px; 
+}
+
+
+.filtro_blanco{
+	filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(102deg) brightness(104%) contrast(101%);
+}
+
+.filtro_morado{
+	filter: invert(72%) sepia(5%) saturate(1722%) hue-rotate(251deg) brightness(89%) contrast(85%);
+}
+
+.filtro_amarillo{
+	filter: invert(100%) sepia(34%) saturate(5488%) hue-rotate(308deg) brightness(104%) contrast(102%);
+}
+
+.filtro_verde{
+	filter: invert(71%) sepia(10%) saturate(1534%) hue-rotate(71deg) brightness(92%) contrast(90%);
+}
+
+.filtro_rojo{
+	filter: invert(41%) sepia(35%) saturate(7421%) hue-rotate(342deg) brightness(95%) contrast(94%);
+}
+
+.filtro_azul{
+	filter: invert(39%) sepia(86%) saturate(6833%) hue-rotate(238deg) brightness(105%) contrast(101%);
+}
+
+
+
+.colorInicial{
+	color: #9a659a;
+	font-weight: bold;
+}
+
+.colorDeAvance{
+	color: #ff9d00;
+	font-weight: bold;
+}
+
+.colorRenuncio{
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.colorFinal{
+	color: #74ba74;
+	font-weight: bold;
+}
+
+.colorVencido{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link{
+        filter: invert(58%) sepia(87%) saturate(692%) hue-rotate(169deg) brightness(104%) contrast(95%);
+        cursor: pointer;
+        width: 25px;
+        top:20%;
+}
+
+.link:hover{
+	filter: invert(36%) sepia(86%) saturate(825%) hue-rotate(201deg) brightness(78%) contrast(98%);
+}
+
+
+
+.filas :last-child{
+	padding: 0px 0px;
+}

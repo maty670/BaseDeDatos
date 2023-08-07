@@ -1,0 +1,305 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.contenedor_UVT{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90vw;
+	justify-content: center;
+}
+
+.UVT{
+	text-align: center;
+    background-color: #eaf0f8;
+    border-radius: 5px;
+    color: #0d61a4;
+    flex-basis: 12%;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 1vw 1vw;
+    order: -1;
+    box-shadow: 0 0.1rem 0.125rem 0.1rem rgb(0 0 0 / 30%),
+    				    0 0 0 0.1rem rgb(0 0 0 / 15%)
+}
+
+.nueva_UVT{
+	background-color: rgba(101, 102, 158, 0.2); 
+	color: rgba(101, 102, 158, 0.6);
+	order: 1;
+	min-height: 180px;
+}
+
+.icono{
+
+}
+
+.nueva_UVT div.icono{
+  font-family: Verdana;
+  margin: auto;
+  font-size: 50px;
+  position: relative;
+  left: 2px;
+  bottom: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nueva_UVT div.icono:hover{
+	color:#0d61a4;
+}
+
+
+
+
+
+.UVT .titulo{
+	font-size: 19px;
+	margin: 0px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+}
+
+.UVT .operaciones{
+
+}
+
+.UVT .operaciones div,
+.UVT .operaciones a{
+	font-family: Arial;
+	color: #FFFFFF;
+	width: 95%;
+	margin: 3px auto;
+	padding: 3px 1px;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	border-radius: 3px;
+}
+
+.UVT .operaciones div:hover,
+.UVT .operaciones a:hover{
+	box-shadow: 0px 0px 10rem 10rem rgba(0,0,0,0.25) inset;
+}
+
+
+.UVT .operaciones .operaciones_recepciones,
+.UVT .operaciones .operaciones_excel,
+.UVT .operaciones .operaciones_pdf,
+.UVT .operaciones .operaciones_eliminar{
+	display: flex;
+	justify-content: start;
+	background: linear-gradient(#fff 75%, #aaa 100%);
+	align-items:center;
+	color: #000;
+	padding-left: 3px;
+	column-gap: 10%;
+}
+
+.UVT .operaciones img{
+	width: 12px;
+	height: 14px;
+}
+
+.UVT .operaciones p{
+	font-size: 11px;
+	margin: 0;
+	top:50%;
+}
+
+
+.UVT .operaciones .operaciones_recepciones img{
+	filter: invert(33%) sepia(9%) saturate(6180%) hue-rotate(183deg) brightness(92%) contrast(85%);
+}
+
+.UVT .operaciones .operaciones_excel img{
+	
+}
+
+.UVT .operaciones .operaciones_pdf img{
+	
+}
+
+.UVT .operaciones .operaciones_eliminar img{
+	filter: invert(14%) sepia(6%) saturate(14%) hue-rotate(336deg) brightness(97%) contrast(82%);
+}
+
+/*
+.UVT .operaciones .operaciones_recepciones{
+	background: linear-gradient(180deg, #36a3e9 5%, #276198 100%);
+}
+
+.UVT .operaciones .operaciones_excel{
+	background: linear-gradient(180deg, #31be7d 5%, #175935 100%);
+}
+
+.UVT .operaciones .operaciones_pdf{
+	background: linear-gradient(180deg, #d31517 5%, #990000 100%);
+}
+
+.UVT .operaciones .operaciones_eliminar{
+	background: linear-gradient(180deg, #bf4700 5%, #9f3c00 100%);
+}
+*/
+
+
+.formulario{
+	display: none;
+}
+
+
+
+
+
+
+
+.texto_Nueva_UVT{
+	display: block;
+	background-color: #eaf0f8;
+	color: #0d61a4;
+	min-width: 90%;
+    max-width: 90%;
+    margin: 5px auto 0px auto;
+    min-height: 50px;
+    height: 120px;
+    max-height: 180px;
+    font-size: 20px;
+}
+
+.btn_Agregar_UVT {
+  background: linear-gradient(180deg, #673FD7 5%, #42219e 100%);
+  font-family: Arial;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: fit-content;
+	margin: 5px auto;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_Agregar_UVT:hover {
+  background: #371b84;
+}
+
+.btn_Cancelar_UVT {
+  background: linear-gradient(180deg, #9f9f9f 5%, #707070 100%);
+  font-family: Arial;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: fit-content;
+	margin: 5px auto;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_Cancelar_UVT:hover {
+  background: #606060;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.editUVT{
+	display: inline-block;
+	width: fit-content;
+	margin-left: auto;
+	margin: 3px 3px auto auto;
+	cursor: pointer;
+}
+
+.editUVT img{
+	width: 12px;
+	height: 12px;
+	padding: 8px 4px;
+}
+
+
+.editUVT img:hover{
+	border-radius:5px; 
+	background: #aaa;
+}
+
+.textArea_editUVT{
+	display: block;
+	background-color: #eaf0f8;
+	color: #0d61a4;
+	min-width: 85%;
+    max-width: 85%;
+    margin: 5px auto 0px auto;
+    min-height: 60px;
+    height: 120px;
+    max-height: 180px;
+    font-size: 19px;
+    padding: 4px 8px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.btn_editUVT{
+	background: linear-gradient(180deg, #673FD7 5%, #42219e 100%);
+  	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: fit-content;
+	margin: 5px 5px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_editUVT:hover{
+	background: #371b84;
+}
+
+.btn_Agregar_UVT:hover {
+  background: #371b84;
+}
+
+.btn_cancelarEdit{
+	background: linear-gradient(180deg, #9f9f9f 5%, #707070 100%);
+  	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: fit-content;
+	margin: 5px 5px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_cancelarEdit:hover {
+  background: #606060;
+}

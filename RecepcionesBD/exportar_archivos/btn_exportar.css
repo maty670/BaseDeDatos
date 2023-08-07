@@ -1,0 +1,69 @@
+.contenedor_botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+p{
+	display: inline;
+	position: relative;
+	top: -8px;
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.contenedor_img_excel img{
+	width: 20px;
+	height: 30px;
+	position: relative;
+	top:0%;
+}
+
+.contenedor_img_pdf img{
+	width: 20px;
+	height: 30px;
+	position: relative;
+	top: 50%;
+}
+
+.contenedor_excel,
+.contenedor_pdf{
+	background: #183153;
+	outline: 1px solid black;
+	border-radius: 5px;
+	padding-bottom: 4px;
+	margin:0px 40px;
+	cursor: pointer;
+}
+
+
+.contenedor_img_excel,
+.contenedor_img_pdf{
+	padding: 6px 15px;
+	border-radius: 5px;
+	background: #fff;
+	transition-duration: 0.4s;
+}
+
+.contenedor_img_excel:hover,
+.contenedor_img_pdf:hover{
+	background: #cce;
+}
+
+
+
+
+
+.contenedor_img_excel img{
+	
+}
+
+.contenedor_img_pdf img{
+	
+}

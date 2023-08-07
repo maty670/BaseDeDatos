@@ -1,0 +1,87 @@
+body{
+	margin: 0;
+}
+
+.contenedor_convocatorias{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90vw;
+	justify-content: center;
+}
+
+.convocatoria{
+	text-align: center;
+    background-color: #248;
+    border-radius: 5px;
+    color: #fff;
+    flex-basis: 12%;
+    min-width: 221px;
+    min-height: 280px;
+    margin: 1vw 1vw;
+    order: -1;
+    box-shadow: #303030 5px 5px 2px 0px;
+
+}
+
+.nueva_convocatoria{
+	background-color: rgba(101, 102, 158, 0.2); 
+	color: rgba(101, 102, 158, 0.6);
+	order: 1;
+	min-height: 280px;
+	cursor: pointer;
+}
+
+.nueva_convocatoria div{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  font-size: 35px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+.convocatoria .titulo{
+	font-size: 40px;
+	margin: 0px 0px;
+	text-align: center;
+	height: 75%;
+}
+
+.convocatoria .operaciones{
+	display: block;
+	position: relative;
+	transform: translateY(-50%);
+}
+
+.convocatoria .operaciones div{
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 15px;
+	width: 90%;
+	margin: 2px auto;
+	padding: 6px 1px;
+	cursor: pointer;
+}
+
+.convocatoria .operaciones div:hover{
+	color: #000;
+}
+
+.convocatoria .operaciones div:nth-child(1){
+	background: linear-gradient(180deg, #36a3e9 5%, #276198 100%);
+}
+
+.convocatoria .operaciones div:nth-child(2){
+	background: linear-gradient(180deg, #bf4700 5%, #9f3c00 100%);
+}
+
+.convocatoria .operaciones div:nth-child(3){
+	background: linear-gradient(180deg, #118000 5%, #084000 100%);
+}
+
+.convocatoria .operaciones div:nth-child(4){
+	background: linear-gradient(180deg, #bf0000 5%, #600000 100%);
+}

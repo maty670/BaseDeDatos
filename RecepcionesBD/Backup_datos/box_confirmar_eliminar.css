@@ -1,0 +1,116 @@
+.contenedor{
+	position: fixed;
+	display: none;
+	top:25%;
+	left: 0;
+	width: 100%;
+}
+
+.contenedor_cuadro{
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	min-width: 400px;
+	background: #f2f8f9;
+	z-index: 4;
+	width: 20vw;
+	margin: auto;
+	top:25vh;
+	border: 0px solid black;
+	border-radius: 10px;
+	padding: 10px 10px 20px 10px;
+	row-gap:40px;
+}
+
+.contenedor_cuadro .cabecera{
+	
+}
+.contenedor_cuadro .texto_mensaje{
+	
+	
+}
+
+.contenedor_cuadro .cabecera{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 5px;
+	border-bottom:0px solid #ccc;
+	font-family: Franklin Gothic Medium;
+	font-size: 18px;
+	color:#333;
+	font-weight: bold;
+}
+
+.cabecera img{
+	width: 15px;
+	height: 15px;
+	padding: 4px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.cabecera img:hover{
+	filter: brightness(50%);
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.cabecera .texto{
+	width: 100%;
+	text-align: center;
+}
+
+.contenedor_cuadro .texto_confirmacion_mensaje,
+.contenedor_cuadro .texto_confirmacion_fecha{
+	font-family: Tahoma;
+	font-size: 15px;
+	color: #4b4e4e;
+	text-align: center;
+	font-weight: 600;
+}
+
+.contenedor_cuadro .texto_confirmacion_fecha{
+	color: #323232;
+}
+
+.contenedor_botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+  	column-gap: 8%;
+}
+
+.contenedor_botones .confirmar,.contenedor_botones .cancelar{
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 16px;
+	min-width: 150px;
+	max-width: 150px;
+	height:2.5rem;
+	font-weight: bold;
+	border: none;
+	color:white;
+
+}
+
+.contenedor_botones .confirmar{
+	background: #3085d6;
+}
+
+.contenedor_botones .confirmar:hover{
+	filter: brightness(75%);
+}
+
+
+.contenedor_botones .cancelar:hover{
+	filter: brightness(75%);
+}
+
+.contenedor_botones .cancelar{
+	background: #777;
+}
+

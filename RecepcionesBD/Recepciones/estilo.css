@@ -1,0 +1,550 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+	margin: 0px;
+}
+
+
+
+.contenedor_convocatorias_años{
+	margin: 30px 10px;
+	padding: 0px 0px 1px 0px;
+	min-width: 97vw;
+	width: fit-content;
+	border-radius: 15px;
+    background: rgb(50 50 50 / 25%); 
+}
+
+.contenedor_convocatorias_años .separador_año{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: Calibri;
+	background: #ff9900;
+
+	width: 1000px;
+	min-width: 150px;
+	max-width: 930px;
+
+	margin-left: 50px;
+	margin-bottom: 20px;
+
+	border-top-left-radius: 15px;
+  	-moz-border-radius-topleft: 15px;
+
+  	border-top-right-radius: 15px;
+  	-moz-border-radius-topright: 15px;
+
+
+}
+
+
+
+input[type="date"]:in-range::-webkit-datetime-edit-year-field{
+	color: transparent; 
+} 
+input[type="date"]:in-range::-webkit-datetime-edit-month-field{
+	color: transparent; 
+} 
+input[type="date"]:in-range::-webkit-datetime-edit-day-field{
+	color: transparent; 
+}
+input[type="date"]:in-range::-webkit-datetime-edit-text{
+ 	color: transparent; 
+}
+
+input[type="date"]:focus:in-range::-webkit-datetime-edit-year-field{
+	color: black; 
+} 
+input[type="date"]:focus:in-range::-webkit-datetime-edit-month-field{
+	color: black; 
+} 
+input[type="date"]:focus:in-range::-webkit-datetime-edit-day-field{
+	color: black; 
+}
+input[type="date"]:focus:in-range::-webkit-datetime-edit-text{
+ 	color: black; 
+}
+
+
+input{
+	box-sizing: border-box;
+	border: none;
+}
+
+input{
+  outline: none;
+}
+
+
+
+
+body{
+  background:linear-gradient(#dcd5c2, #666);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: monospace;
+  padding-bottom: 100px;
+}
+
+
+.contenedor_Tituto_UVT{
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 3rem;
+	background-color: #171717;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	opacity: 70%;
+
+}
+
+
+
+.Titulo_UVT{
+	font-size: 25px;
+	color: #fff;
+	letter-spacing: 3px;
+	padding: 15px 35px;
+}
+
+.Titulo_UVT::before{
+	content: "UVT: ";
+}
+
+
+
+
+
+
+
+
+.tabla{
+	margin: 0px 20px;
+	width: 100%;
+}
+.tabla table{
+	border-collapse: collapse;
+}
+
+
+.indice_convocatoria{
+	display: block;
+	position: relative;
+	bottom: 100px;
+	margin-bottom: 80px;
+}
+
+.Titulo_convocatoria{
+
+	text-align: center;
+	font-size: 25px;
+	color:white;
+	font-family: Calibri;
+	min-width: 850px;
+	max-width: 850px;
+	letter-spacing: 5px;
+	background-color: #333;
+	position: relative;
+	right: 0.5px;
+	padding: 10px 40px;
+	border-top-left-radius:12px;
+  	-moz-border-radius-topleft: 12px;
+
+  	border-top-right-radius:12px;
+  	-moz-border-radius-topright: 12px;
+
+  	border-bottom-left-radius:2px;
+  	-moz-border-radius-bottomleft: 2px;
+
+  	border-bottom-right-radius:2px;
+  	-moz-border-radius-bottomright: 2px;
+}
+
+.visibilidad{
+	background: transparent;
+	opacity: 90%;
+	display: block;
+	min-width: 100px;
+	padding: 0 10px;
+	cursor: pointer;
+	position: relative;
+	left: -1px;
+	text-align: left;
+    cursor: pointer;
+    border-top-right-radius:12px;
+  	-moz-border-radius-topright: 12px;
+}
+
+.visibilidad:hover img{
+	filter: invert(37%) sepia(11%) saturate(1245%) hue-rotate(207deg) brightness(94%) contrast(91%);
+}
+
+.visibilidad img{
+	position: relative;
+	height: 25px;
+	top:12.5px;
+	filter: invert(18%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(103%) contrast(94%);
+}
+
+.no_visible{
+	left: 30px;
+}
+
+
+
+
+
+.Titulos_columnas{
+
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.Titulos_columnas .Celda{
+	border:1px solid black;
+	background:linear-gradient(#577284, #333);
+	padding: 1px 4px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.Titulos_columnas td.R{
+	background:linear-gradient(#ff0, #333);
+	color:white;
+}
+
+.Titulos_columnas td.I{
+	background:linear-gradient(#ff0, #333);
+}
+
+
+
+
+
+.Titulos_columnas.titulos td:nth-child(4),.Datos td:nth-child(4){
+	position: sticky;
+	left:0px;
+	z-index: 2;
+}
+
+
+
+
+
+.Titulos_columnas .margen{
+	min-width:50px;
+	border: none;
+	color: transparent;
+}
+
+
+
+.Titulos_columnas .Rendiciones_presentadas{
+	background:linear-gradient(#6A5ACD 70%, #333);
+	text-align: center;
+	color: #fff;
+}
+
+
+
+
+.Datos > td > input{
+	text-align: center;
+	font-size: 12px;
+}
+
+.Datos > td > input[type=date]{
+	width: fit-content;
+}
+
+.Datos > td.Celda.rendicion.inicioR > input[type=date], tbody > tr.Datos > td.Celda.rendicion.inicioR{
+	background: #666;
+	color: #fff;
+}
+
+
+.Datos > td > input[type=number]{
+	width: 100px;
+}
+
+.Datos > td > input[type=text]{
+	width: 150px;
+}
+
+
+
+
+.Datos .Celda{
+	background-color: white;
+	border:1px solid black;
+	text-align: center; 
+	width: fit-content;
+}
+
+.Datos td.Convocatoria input{
+	width: 200px;
+}
+
+.Celda input{
+	width: fit-content;
+	border: none;
+}
+
+
+
+.Codigo{
+	transition-duration: 0s;
+}
+.Director{
+	transition-duration: 0.2s;
+}
+
+
+
+.Celda textarea{
+	padding: 0;
+	min-width: 220px;
+	height: 15px;
+	min-height: 15px;
+	max-height: 120px;
+}
+
+
+
+
+input[type='checkbox']:hover{
+	cursor: pointer;
+	background: #333;
+
+}
+
+
+input[type='checkbox']:after{
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 10%;
+    background: #beaca1;
+}
+
+input[type='checkbox']:checked:after {
+	content: '✓';
+	font-size: 10px;
+	font-weight: 900;
+	width: 13px;
+  height: 13px;
+  background: #00bfad;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.btnNuevo{
+	margin-top: 4px;
+	margin-left: 30px;
+	border: 1px solid #5c75a3;
+	display: inline-block;
+	padding-left: 10px;
+	background:linear-gradient(#829adc, #829adc);
+
+}
+
+.btnNuevo:hover ,.btnNuevo:hover input {
+	background:linear-gradient(#5c75a3, #5c75a3);
+}
+
+.btnNuevo input,.btnNuevo div{
+	background:linear-gradient(#829adc, #829adc);
+	border: none;
+	cursor: pointer;
+	padding: 2px 0px 2px 0px;
+}
+
+.btnNuevo div{
+	background: url("./iconos/nuevoDato.svg") no-repeat left;
+	width: fit-content;
+	background-size: 15px;
+	padding-left: 20px;
+	
+}
+
+.btnNuevo input{
+	font-size: 12px;
+	position: relative;
+	top:1px;
+	right: 3px;
+	font-family: Georgia;
+	letter-spacing: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #000;
+}
+
+
+
+
+
+.contenedor_botones_GuardarVolver{
+	margin-right: 1.3vw;
+	display: flex;
+	align-items: center;
+	font-family: monospace;
+	gap:0px;
+	height: 3rem;
+}
+
+.btnGuardar,.btnVolver{
+	height: 100%;
+	background: transparent;
+}
+
+.btnGuardar{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.btnVolver{
+	border-right: 1px solid black;
+}
+
+
+.btnGuardar:hover ,.btnGuardar:hover input,
+.btnVolver:hover ,.btnVolver:hover input {
+	background-color: #00af9d;
+	border-radius: 0px;
+}
+
+.btnGuardar input,
+.btnVolver input{
+	background-color: transparent;
+}
+
+.btnGuardar input,
+.btnVolver input{
+	border: none;
+	font-weight: 800;
+	cursor: pointer;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #eee;
+	height: 100%;
+	text-shadow: 1px 1px #000;
+	padding: 10px 25px;
+	border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btnEliminar{
+	background: url("./iconos/eliminar.svg") no-repeat left;
+	width: fit-content;
+	background-size: 15px;
+	background-position: center;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+.btnEliminar:hover{
+	opacity: 30%;
+}
+
+
+
+
+
+.mensajeAlerta{
+	width: 97vw;
+	height: 45px;
+	position: sticky;
+	left: 10px;
+	bottom: 80px;
+	background-color: #009f57;
+	z-index: 10;
+	opacity: 90%;
+	border-radius: 5px;
+	display: none;
+}
+
+.mensajeAlerta img{
+	width: 20px;
+	height: 20px;
+	padding: 12px 10px 12px 30px;
+}
+
+
+.mensajeAlerta span{
+	color: white;
+	padding: 15px 0px;
+	position: absolute;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Datos td.ROJO ,.Datos td.ROJO input,.Datos td.ROJO select,.Datos td.ROJO textarea{
+	background-color: red;
+	color:white;
+}
+
+
+.Datos td.VERDE ,.Datos td.VERDE input,.Datos td.VERDE select,.Datos td.VERDE textarea{
+	background-color: green;
+	color:white;
+}
+
+.Datos td.CELESTE ,.Datos td.CELESTE input,.Datos td.CELESTE select,.Datos td.CELESTE textarea{
+	background-color: #0086b3;
+	color:white;
+}
+
+
+

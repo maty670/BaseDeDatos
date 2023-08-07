@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(/BD/Rendiciones/Nueva_Convocatoria/fondo.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: monospace;
+}
+
+
+.contenedor_nombre{
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 35px;
+    border-radius: 10px;
+}
+.contenedor_nombre input::placeholder {
+  color: deeppink;
+  text-transform: uppercase;
+
+}
+
+.contenedor_nombre input{
+    border:none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 3px 4px 0px #808080;
+  -moz-box-shadow: 3px 4px 0px #808080;
+  box-shadow: 3px 4px 0px #808080;
+  position:relative;
+}
+
+.contenedor_nombre input[type=button]:active{
+  -webkit-box-shadow: 1px 3px 0px #808080;
+  -moz-box-shadow: 1px 3px 0px #808080;
+  box-shadow: 1px 3px 0px #808080;
+  position:relative;
+  top:3px;
+}
+
+
+
+.contenedor_rubros{
+	background: transparent;
+}
+
+.contenedor_rubros .rubro{
+	background: #eee;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin: 5px auto;
+	padding: 20px 5px;
+	width: 50%;
+	min-width: 650px;
+	text-align: center;
+}
+
+.contenedor_rubros .rubro p{
+	display: inline;
+	font-family: sans-serif;
+	margin: 0 3px;
+	line-height: 2;
+}
+
+.rubro .divRubro{
+	display: inline;
+}
+
+.divRubro input{
+	min-width: 500px;
+}
+
+.rubro .divANR{
+	
+	display: inline-block;
+}
+
+.divANR input{
+	width: 40px;
+}
+
+.contenedor_rubros input{
+	width: fit-content;
+	display: block;
+	margin:10vh auto;
+	padding: 10px 20px;
+    
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #538fbe;
+    border: 1px solid #2d6898;
+    background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(73,132,180)),
+        color-stop(1, rgb(97,155,203)));
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+
+.contenedor_rubros input:active{
+  -webkit-box-shadow: 3px 4px 0px #808080;
+  -moz-box-shadow: 3px 4px 0px #808080;
+  box-shadow: 3px 4px 0px #808080;
+  position:relative;
+  top:4px;
+}

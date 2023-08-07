@@ -1,0 +1,2 @@
+10.8.50.1:81
+<?php include ("D:\SERVIDOR\AGENCIA\SistemaBD\wamp\www\BaseDeDatos\index.html")?>

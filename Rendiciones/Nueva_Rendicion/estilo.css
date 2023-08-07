@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.article section div{
+	
+}
+
+.article section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.header nav{
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.header nav a{
+
+	display: block;
+	margin: 10px;
+	height: 50px;
+	width: fit-content;
+
+
+  color:#ecf0f1;
+  text-decoration:none;
+  border-radius:5px;
+  border: 1px solid black;
+
+  text-align:center;
+  padding:16px 18px 14px;
+
+  
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+	
+  -webkit-box-shadow: 3px 4px 0px #202020;
+  -moz-box-shadow: 3px 4px 0px #202020;
+  box-shadow: 3px 4px 0px #202020;
+}
+
+.header nav a:active{
+  -webkit-box-shadow: 3px 4px 0px #808080;
+  -moz-box-shadow: 3px 4px 0px #808080;
+  box-shadow: 3px 4px 0px #808080;
+  position:relative;
+  top:4px;
+}
+
+.header nav a:nth-child(1), .article #pagina1{
+	background: #727848;
+}
+
+.header nav a:nth-child(2), .article #pagina2{
+	background: #485478;
+}
+
+.header nav a:nth-child(3), .article #pagina3{
+	background: #cf6b30;
+}
+
+.header nav a:nth-child(4), .article #pagina4{
+	background: #bfbfbf;
+}
+
+.header nav a:nth-child(5), .article #pagina5{
+	background: #55897d;
+}
