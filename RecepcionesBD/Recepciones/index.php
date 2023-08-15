@@ -75,7 +75,7 @@
 
 	<div class="contenedor_Tituto_UVT">
 		<h1 class="Titulo_UVT"><?php echo $UVT?></h1>
-		<form action="" method="post" name="" id="">
+		<form action="" method="post" name="" id="form">
 			<div class="contenedor_botones_GuardarVolver">
 
 				<div class="btnGuardar">
@@ -377,8 +377,10 @@
 		<script type="text/javascript" src="validarFormatos.js"></script>
 		<script type="text/javascript" src="formatoMontos.js"></script>
 		<script type="text/javascript" src="visibilidad.js"></script>
+		<script type="text/javascript" src="enter_preventDefault.js"></script>
 		<script type="text/javascript">
 
+			// Generar el efecto Smooth_SCrolling al comienzo de la carga
 			setTimeout(function () {
 				const href = document.querySelector(".href_codigo");
 				href.click();

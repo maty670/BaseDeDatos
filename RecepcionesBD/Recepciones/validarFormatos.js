@@ -38,7 +38,6 @@ function esTextoPermitido(input)
   		elemento.parentNode.style.background="";
   		elemento.style.background="";
       elemento.style.color="#000";
-      console.log(elemento.style.color);
   }
 
   function validarTextoConvocatorias(evt,campos){
