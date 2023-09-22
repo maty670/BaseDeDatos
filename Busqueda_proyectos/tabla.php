@@ -120,14 +120,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
 <div class="espacio_tablas_y_graficas">
 
 	<div class="espacio_btn_graficas">
@@ -175,17 +167,6 @@
 	<?php include('./graficas/Espacio_Graficas_Departamentos.php');?>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="espacio_tablas_y_graficas">
 

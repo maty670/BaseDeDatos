@@ -1,0 +1,77 @@
+:root{
+    --background_blue:#405367;
+    --color_white: #fff;
+
+    --height_titulo:1rem;
+    
+    --w1:2rem;
+    --w2:4rem;
+    --w3:8rem;
+    --fontSize_titulo:0.85rem;
+    --titulo_padding:2px 12px;
+}
+
+/* width */
+.contenedor_tabla::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+  
+/* Track */
+.contenedor_tabla::-webkit-scrollbar-track {
+    background:#eeefff; 
+}
+   
+/* Handle */
+.contenedor_tabla::-webkit-scrollbar-thumb {
+    background: var(--background-principal);
+}
+  
+/* Handle on hover */
+.contenedor_tabla::-webkit-scrollbar-thumb:hover {
+    background: #41678d;
+}
+
+
+
+
+.contenedor_tabla{
+	position: relative;
+	margin: 2vh auto 5vh auto;
+	overflow-y:auto;
+	overflow-x:auto;
+	min-width: 850px;
+	max-width: 98%;
+	max-height: 85vh;
+}
+
+
+.tabla_resultados{
+	border-collapse: collapse;
+}
+
+.tabla_resultados td.titulo,
+.tabla_resultados td.titulo textarea{
+    min-width: var(--width_titulo);
+    height: var(--height_titulo);
+    padding: var(--titulo_padding);
+    text-align: center;
+    font-size: var(--fontSize_titulo);
+    background: var(--background_blue);
+    color: var(--color_white);
+}
+
+.tabla_resultados td.w1{min-width: var(--w1);}
+.tabla_resultados td.w2{min-width: var(--w2);}
+.tabla_resultados td.w3{min-width: var(--w3);}
+
+
+
+.tabla_resultados td.titulo textarea{
+    min-width: var(--w3);
+    resize: horizontal;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+}
+

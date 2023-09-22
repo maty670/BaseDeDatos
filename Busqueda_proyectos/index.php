@@ -3,6 +3,7 @@
 <link rel="stylesheet" type="text/css" href="paginacionn.css">
 <link rel="stylesheet" type="text/css" href="nav.css">
 <link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="tabla_resultados.css">
 <link rel="stylesheet" type="text/css" href="./graficas/graficas.css">
 <script src="https://kit.fontawesome.com/8e82b560a5.js" crossorigin="anonymous"></script>
 
@@ -373,15 +374,13 @@
 	} 
 	if(isset($_POST['buscar'])){
 
-
-		
 		if($_POST['aMin']=="" OR $_POST['aMax']==""){
 		echo '<th><font color="red"><center>Campos de años incorrectos</center></font></th>';
 		}elseif($_POST['aMin']>$_POST['aMax']){
 		echo '<th><font color="red"><center>El año inicial debe ser menor o igual al año final</center></font></th>';
 		}else{
 		include("consulta.php");
-		
+		include("tabla_resultados.php");
 		}
 	}
 	

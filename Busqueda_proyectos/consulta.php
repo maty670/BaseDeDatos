@@ -175,21 +175,4 @@
 		$registros_localidad=$consulta_por_localidad->fetchAll(PDO::FETCH_OBJ);
 		
 	
-	
-	
-	
-	
-	
-	
-	
-	include("tabla.php");     //Generar tabla con la consulta
-	
-	
-		
-	
-		
-
-
-	
-	
 ?>
