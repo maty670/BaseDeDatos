@@ -1,0 +1,75 @@
+body{
+	background: #1e8136;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+
+.tabla_container{
+	position: absolute;
+
+	top: 35%;
+	left: 35%;
+	width: 30%;
+}
+
+
+table{
+	border: 2px dashed #ff0;
+	border-collapse: collapse;
+	color: #aaa;
+	position: relative;
+	min-width: 400px;
+	width: 100%;
+}
+
+table th{
+	padding: 10px 50px;
+}
+
+
+table td{
+	border: none;
+	color: #eee;
+	text-align: left;
+}
+
+table .fila_usuario input,
+table .fila_contraseña input{
+	text-align: left;
+	color: #505050;
+	margin: 5px 0px;
+	max-width:200px;
+	width: 90%;
+	font-size: 18px;
+}
+
+.td_span{
+	padding-left: 15px;
+}
+
+
+
+table .fila_aceptar input{
+	font-family: sans-serif;
+	text-decoration: bold;
+	font-size: 20px;
+	border:none;
+	border-radius: 5px;
+	padding: 8px 20px;
+	background: #b1deed;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+
+.fila_aceptar td{
+	text-align: center;
+}
+
+span{
+	font-size: 17px;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+

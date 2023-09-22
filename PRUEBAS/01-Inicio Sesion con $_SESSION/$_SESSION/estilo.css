@@ -1,0 +1,20 @@
+body{
+	background: #fff99f;
+}
+
+table{
+	width: fit-content;
+	border: 1px dashed #000;
+	text-align: center;
+	padding: 10px 30px;
+	position: relative;
+	margin: 10% auto;
+}
+
+
+td.usuario input,
+td.contraseña input{
+	border: 2px inset #9fbfdf;
+	margin: 1px;
+	min-width: 300px;
+}
