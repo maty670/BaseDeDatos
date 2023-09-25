@@ -11,6 +11,8 @@
 
 ?>
 
+
+<?php $i=1; ?>
 <?php include("EspacioTablasGraficas.php");?>
 
 <div class="contenedor_tabla">
@@ -41,7 +43,7 @@
 <?php foreach($registros as $r):	
 	include("resaltar_textos.php");?>
 		<tr class="tr_celda" tabindex="2">
-			<td class="celda"></td>
+			<td class="celda"><?php echo $i;?></td>
 			<td class="celda l3"><?php echo $Codigo?></td>
 			<td class="celda center"><?php echo $r->Modalidad?></td>
 			<td class="celda l1"><?php echo $Titulo?></td>
@@ -60,7 +62,7 @@
 			<td class="celda l4"><?php echo $Financiacion?></td>
 			<td class="celda l4"><?php echo $r->Puntaje?></td>
 		</tr>
-	
+	<?php $i++; ?>
 <?php endforeach; ?>
 
 
