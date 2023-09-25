@@ -1,16 +1,17 @@
+
 <?php   
 
-	$Codigo=$proyecto->Codigo;
-	$Titulo=$proyecto->Titulo;
-	$Beneficiario=$proyecto->Beneficiario;
-	$Departamento=$proyecto->Beneficiario_Departamento;
-	$Localidad=$proyecto->Beneficiario_Localidad;
-	$Director=$proyecto->Director;
-	$Organizacion_Vinculante=$proyecto->Organizacion_Vinculante;
-	$Convocatoria=$proyecto->Convocatoria;
-	$Financiacion=$proyecto->Financiacion;
-	$Admisibilidad=$proyecto->Admisibilidad;
-	$Modalidad=$proyecto->Modalidad;
+	$Codigo=$r->Codigo;
+	$Titulo=$r->Titulo;
+	$Beneficiario=$r->Beneficiario;
+	$Departamento=$r->Beneficiario_Departamento;
+	$Localidad=$r->Beneficiario_Localidad;
+	$Director=$r->Director;
+	$Organizacion_Vinculante=$r->Organizacion_Vinculante;
+	$Convocatoria=$r->Convocatoria;
+	$Financiacion=$r->Financiacion;
+	$Admisibilidad=$r->Admisibilidad;
+	$Modalidad=$r->Modalidad;
 	
 	
 	if($columna1=="Codigo" AND $palabra1!=""){
