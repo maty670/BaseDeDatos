@@ -1,11 +1,12 @@
 <!doctype html>
 <header>
-<link rel="stylesheet" type="text/css" href="paginacionn.css">
+<link rel="stylesheet" type="text/css" href="paginacion/paginacion.css">
 <link rel="stylesheet" type="text/css" href="nav.css">
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <link rel="stylesheet" type="text/css" href="tabla_resultados.css">
 <link rel="stylesheet" type="text/css" href="./graficas/graficas.css">
 <script src="https://kit.fontawesome.com/8e82b560a5.js" crossorigin="anonymous"></script>
+
 
 
 
@@ -388,7 +389,7 @@
 
 </body>
 
-
+<script type="text/javascript" src="paginacion/paginacion.js"></script>
 
 
 

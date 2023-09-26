@@ -136,7 +136,6 @@ textarea:focus{
 .tabla_resultados td.celda.center{text-align: center;}
 
 
-
 .tabla_resultados td.celda{
   padding: 10px 5px;
   white-space: nowrap; 
@@ -154,11 +153,20 @@ textarea:focus{
   cursor: pointer;
 }
 
+.tabla_resultados td.celda_titulo
+{
+  max-height: 10px !important; /* Establece la altura máxima en 2 renglones */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  white-space: normal;
+}
+
+
+
 
 .tabla_resultados .tr_celda:hover td{
   background-color:rgb(0, 136, 204,0.2);
 }
 
-.tabla_resultados tr:focus td{
+.tabla_resultados .tr_celda:focus td{
   background-color:rgb(0, 136, 204,0.35) !important;
 }
