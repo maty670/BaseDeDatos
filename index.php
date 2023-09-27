@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+	<style>
+		body{
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
 <head>
 	<title>BD</title>
 	<link rel="stylesheet" type="text/css" href="nav.css">
