@@ -49,7 +49,7 @@
 			<td class="celda id"><?php echo $i;?></td>
 			<td class="celda l3"><?php echo $Codigo?></td>
 			<td class="celda center"><?php echo $r->Modalidad?></td>
-			<td class="celda l1 celda_titulo"><?php echo $Titulo?></td>
+			<td class="celda l1"><?php echo $Titulo?></td>
 			<td class="celda l3"><?php echo $Beneficiario?></td>
 			<td class="celda l2"><?php echo $r->Beneficiario_Correo?></td>
 			<td class="celda l4"><?php echo $Departamento?></td>

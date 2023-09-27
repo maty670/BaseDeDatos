@@ -1,29 +1,17 @@
 <!doctype html>
-<header>
+
 <link rel="stylesheet" type="text/css" href="paginacion/paginacion.css">
-<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="../nav.css">
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <link rel="stylesheet" type="text/css" href="tabla_resultados.css">
 <link rel="stylesheet" type="text/css" href="./graficas/graficas.css">
+<link rel="stylesheet" type="text/css" href="reload.css">
 <script src="https://kit.fontawesome.com/8e82b560a5.js" crossorigin="anonymous"></script>
 
 
 
 
-	<div class="navegador">
-        <ul id="menu">
-          <li><a href="../Busqueda_proyectos/">Busqueda de Proyectos</a></li>
-          <li><a href="">Evaluadores AGENCIA</a>
-            <ul>
-              <li><a href="../evaluadores/evaluaciones/">Evaluaciones</a></li>
-              <li><a href="../evaluadores/evaluadores/">Banco de Evaluadores</a></li>
-            </ul>  
-          </li>
-        </ul>
-      </div>
-</header>
 
-<br><br>
 
 <meta charset="utf-8">
 <title>BD</title>
@@ -50,10 +38,17 @@
 </style>
 
 	
-
+<div class="body-container">
 <body background='../Recursos/fondo.jpg' >
 
+<?php include ("../nav.php")?>
 
+
+<div class="reload-container">
+	<div class="reload-animation">
+		<div class="loader"></div>
+	</div>
+</div>
 
 
 
@@ -387,8 +382,11 @@
 	
 ?>
 
-</body>
 
+
+</body>
+</div>
+<script type="text/javascript" src="js/load.js"></script>
 <script type="text/javascript" src="paginacion/paginacion.js"></script>
 
 

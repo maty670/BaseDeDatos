@@ -24,7 +24,7 @@
   
   /* Track */
   .contenedor_tabla::-webkit-scrollbar-track {
-    background:#eeefff; 
+    background:#acacac; 
   }
    
   /* Handle */
@@ -153,12 +153,7 @@ textarea:focus{
   cursor: pointer;
 }
 
-.tabla_resultados td.celda_titulo
-{
-  max-height: 10px !important; /* Establece la altura máxima en 2 renglones */
-  overflow: hidden; /* Oculta el contenido que se desborda */
-  white-space: normal;
-}
+
 
 
 
@@ -169,4 +164,6 @@ textarea:focus{
 
 .tabla_resultados .tr_celda:focus td{
   background-color:rgb(0, 136, 204,0.35) !important;
+  overflow: visible;
+  white-space: normal;
 }
