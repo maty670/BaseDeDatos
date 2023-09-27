@@ -44,5 +44,6 @@ for(i=1;i<=cantidad_paginas;i++){
 }
 
 
-
+array_paginas = document.querySelectorAll(".pagina")
 actualizar_tabla(1)
+repintar_paginas(array_paginas[0])
