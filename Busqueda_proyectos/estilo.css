@@ -4,12 +4,29 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: monospace;
+  overflow: hidden;					/*Se pondra visible una vez cargada la pagina (archivo load.js) */
 }
 
-.Titulo_Principal{
-  display: block;
-  text-align: center;
-}
+/* width */
+body::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background:#888; 
+  }
+   
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #34495e;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #41678d;
+  }
 
 
 
@@ -355,14 +372,13 @@ input:checked + .slider:before {
 .btn_excel{
 	display: block;
 	margin: auto;
-	width: 100vw;
 	text-align: center;
 	padding: 10px 0;
 }
 
 .btn_excel *{
 	font-family: verdana;
-	font-size: 1.3vw;
+	font-size: 1.2rem;
 	color:black;
 }
 

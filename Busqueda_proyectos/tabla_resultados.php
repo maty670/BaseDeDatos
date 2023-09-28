@@ -15,7 +15,10 @@
 <?php $i=1; ?>
 <?php include("EspacioTablasGraficas.php");?>
 
-<div class="espacio_paginacion" id="espacio_paginacion"></div>
+<div class="btn_excel">
+	<i class="fa-solid fa-file-excel"></i>
+    <a href="export-Excel.php" target="_BLANK"> Descargar Excel </a>
+</div>
 
 <div class="contenedor_tabla">
 	
@@ -30,7 +33,7 @@
 			<td class="titulo w3"><textarea readonly>Departamento Beneficiario</textarea></td>
 			<td class="titulo w3"><textarea readonly>Localidad Beneficiario</textarea></td>
 			<td class="titulo w2"><textarea readonly>Director</textarea></td>
-			<td class="titulo w1"><textarea readonly>Correo Director</textarea></td>
+			<td class="titulo w2"><textarea readonly>Correo Director</textarea></td>
 			<td class="titulo w3"><textarea readonly>Organización Vinculante</textarea></td>
 			<td class="titulo w3"><textarea readonly>Correo Organizacion Vinculante</textarea></td>
 			<td class="titulo w2"><textarea readonly>Monto ANR</textarea></td>
@@ -38,7 +41,7 @@
 			<td class="titulo w1"><textarea readonly>Año</textarea></td>
 			<td class="titulo w2"><textarea readonly>Admisibilidad</textarea></td>
 			<td class="titulo w2"><textarea readonly>Financiacion</textarea></td>
-			<td class="titulo w1"><textarea readonly>Puntaje</textarea></td>		
+			<td class="titulo w2"><textarea readonly>Puntaje</textarea></td>		
 		</tr>
 
 
@@ -72,3 +75,40 @@
 
 	</table>
 </div>
+
+
+<div class="espacio_paginacion" id="espacio_paginacion"></div>
+
+
+<script>
+	// Al momento de exportar a excel, el caracter '+' genera un error y es necesario
+	// reemplazarlo por la frase mas
+	<?php 
+	$palabra1 =  str_replace("+","&mas&",$palabra1);
+	$palabra2 =  str_replace("+","&mas&",$palabra2);
+	$palabra3 =  str_replace("+","&mas&",$palabra3);
+	$palabra4 =  str_replace("+","&mas&",$palabra4);
+	$palabra5 =  str_replace("+","&mas&",$palabra5);
+
+	?>
+
+	document.cookie = "palabra1=<?php echo $palabra1;?>";
+	document.cookie = "palabra2=<?php echo $palabra2;?>";
+	document.cookie = "palabra3=<?php echo $palabra3;?>";
+	document.cookie = "palabra4=<?php echo $palabra4;?>";
+	document.cookie = "palabra5=<?php echo $palabra5;?>";
+	document.cookie = "columna1=<?php echo $columna1;?>";
+	document.cookie = "columna2=<?php echo $columna2;?>";
+	document.cookie = "columna3=<?php echo $columna3;?>";
+	document.cookie = "columna4=<?php echo $columna4;?>";
+	document.cookie = "columna5=<?php echo $columna5;?>";
+
+	document.cookie = "a=<?php echo $a; ?>";
+	document.cookie = "f=<?php echo $f; ?>";
+	document.cookie = "m=<?php echo $m; ?>";
+
+	document.cookie = "aMin=<?php echo $aMin; ?>";
+	document.cookie = "aMax=<?php echo $aMax; ?>";
+
+	document.cookie = "modo=<?php echo $modo; ?>";
+</script>

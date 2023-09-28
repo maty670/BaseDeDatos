@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="estilo.css">
 <link rel="stylesheet" type="text/css" href="tabla_resultados.css">
 <link rel="stylesheet" type="text/css" href="./graficas/graficas.css">
-<link rel="stylesheet" type="text/css" href="reload.css">
+<link rel="stylesheet" type="text/css" href="load/load.css">
 <script src="https://kit.fontawesome.com/8e82b560a5.js" crossorigin="anonymous"></script>
 
 
@@ -42,7 +42,6 @@
 <body background='../Recursos/fondo.jpg' >
 
 <?php include ("../nav.php")?>
-
 
 <div class="reload-container">
 	<div class="reload-animation">
@@ -250,7 +249,7 @@
 	  y
 	 
       <label for="aMax"></label>
-      <input type="number"  class="select" name="aMax" id="number" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMax']) ?$_POST['aMax'] : '2021' ?>" />
+      <input type="number"  class="select" name="aMax" id="number" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMax']) ?$_POST['aMax'] : '2022' ?>" />
       
 	  </center></td>
 	  </tr> 
@@ -386,7 +385,7 @@
 
 </body>
 </div>
-<script type="text/javascript" src="js/load.js"></script>
+<script type="text/javascript" src="load/load.js"></script>
 <script type="text/javascript" src="paginacion/paginacion.js"></script>
 
 

@@ -3,4 +3,5 @@ body_container = document.querySelector(".body-container")
 window.addEventListener("load",()=>{
     reload_container.style.display="none";
     body_container.style.background="none";
+    document.body.style.overflow="auto"
 })

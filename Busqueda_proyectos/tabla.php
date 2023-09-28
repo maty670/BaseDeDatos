@@ -431,9 +431,7 @@
 
     
 <script>
-
 	<?php 
-
 	$palabra1 =  str_replace("+","&mas&",$palabra1);
 	$palabra2 =  str_replace("+","&mas&",$palabra2);
 	$palabra3 =  str_replace("+","&mas&",$palabra3);
