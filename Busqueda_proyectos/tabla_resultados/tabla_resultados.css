@@ -46,7 +46,7 @@
 
   @font-face {
     font-family: Karla;
-    src: url(fonts/Karla/Karla-VariableFont_wght.ttf);
+    src: url(../fonts/Karla/Karla-VariableFont_wght.ttf);
   }
 
 .contenedor_tabla{

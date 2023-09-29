@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="paginacion/paginacion.css">
 <link rel="stylesheet" type="text/css" href="../nav.css">
 <link rel="stylesheet" type="text/css" href="estilo.css">
-<link rel="stylesheet" type="text/css" href="tabla_resultados.css">
+<link rel="stylesheet" type="text/css" href="./tabla_resultados/tabla_resultados.css">
 <link rel="stylesheet" type="text/css" href="./graficas/graficas.css">
 <link rel="stylesheet" type="text/css" href="load/load.css">
 <script src="https://kit.fontawesome.com/8e82b560a5.js" crossorigin="anonymous"></script>
@@ -42,6 +42,8 @@
 <body background='../Recursos/fondo.jpg' >
 
 <?php include ("../nav.php")?>
+
+
 
 <div class="reload-container">
 	<div class="reload-animation">
@@ -375,7 +377,7 @@
 		echo '<th><font color="red"><center>El año inicial debe ser menor o igual al año final</center></font></th>';
 		}else{
 		include("consulta.php");
-		include("tabla_resultados.php");
+		include("./tabla_resultados/tabla_resultados.php");
 		}
 	}
 	
@@ -385,6 +387,7 @@
 
 </body>
 </div>
+
 <script type="text/javascript" src="load/load.js"></script>
 <script type="text/javascript" src="paginacion/paginacion.js"></script>
 
