@@ -315,8 +315,9 @@
 	<label for="modalidad"> </label>
 	<select name="modalidad" class="select" id="modalidad">	
 		<option <?php if($m == 'Todas'| $m ==''){echo("selected");}?> > Todas </option>
-		<option <?php if($m == 'A'){echo("selected");}?> > A </option>
-		<option <?php if($m == 'B'){echo("selected");}?>> B</option>
+		<option <?php if($m == 'A'){echo("selected");}?> >A</option>
+		<option <?php if($m == 'B'){echo("selected");}?>>B</option>
+		<option <?php if($m == 'C'){echo("selected");}?>>C</option>
 	</select>
 	
 	  </center></td></tr>
@@ -390,6 +391,7 @@
 
 <script type="text/javascript" src="load/load.js"></script>
 <script type="text/javascript" src="paginacion/paginacion.js"></script>
+
 
 
 

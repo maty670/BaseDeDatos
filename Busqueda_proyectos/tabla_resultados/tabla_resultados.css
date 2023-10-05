@@ -18,6 +18,8 @@
 
 
 
+
+
 /* width */
   .contenedor_tabla::-webkit-scrollbar {
     width: 15px;
@@ -171,4 +173,11 @@ textarea:focus{
   color: #fff;
   overflow: visible;
   white-space: normal;
+}
+
+
+.texto_resaltado{
+  background-color: red !important;
+  color: yellow !important;
+  display: inline;
 }

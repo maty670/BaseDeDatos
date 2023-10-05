@@ -2,7 +2,7 @@ const espacio_paginas = document.querySelector(".espacio_paginacion")
 const array_celdas_id = document.querySelectorAll(".id")
 const cantidad_registros = document.querySelector(".tabla_resultados").id
 const cantidad_paginas = Math.ceil(cantidad_registros / 100)
-console.log(cantidad_paginas)
+
 
 if(cantidad_paginas<=30){
     espacio_paginas.style.justifyContent="center"

@@ -42,8 +42,13 @@
 			<td class="titulo w2"><textarea readonly>Puntaje</textarea></td>		
 		</tr>
 
-
-	<?php include("resaltar_frase.php") ?>
+	<?php 
+		$array_palabras = [$palabra1,$palabra2,$palabra3,$palabra4,$palabra5];
+		$array_columnas = [$columna1,$columna2,$columna3,$columna4,$columna5];
+		$array_modalidad = [$m];
+		$array_admisibilidad = [$a];
+		$array_financiacion = [$f];
+		?>
 	<?php include("generar_tabla_resultados.php")?>
 
 	</table>
