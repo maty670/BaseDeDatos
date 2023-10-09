@@ -163,21 +163,34 @@ textarea:focus{
 
 
 
-
 .tabla_resultados .tr_celda:hover td{
-  background-color: #9191d841;
+  background-color: #8d8dc0d3;
+  color: #fff;
 }
 
 .tabla_resultados .tr_celda:focus td{
-  background-color: #666699a2 !important;
+  background-color: #666699c5;
   color: #fff;
   overflow: visible;
   white-space: normal;
 }
 
+.tabla_resultados .tr_celda:focus td.codigo{
+  background-color: #5e5e8bf6;
+  outline: 1px solid black;
+}
+
+.tabla_resultados td.codigo{
+  position: sticky;
+  left: 0px;
+}
+
 
 .texto_resaltado{
-  background-color: red !important;
-  color: yellow !important;
+  background-color: red;
+  color: yellow;
   display: inline;
 }
+
+
+

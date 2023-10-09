@@ -147,7 +147,7 @@
             NuevaFila.setAttribute("class","tr_celda")
             NuevaFila.setAttribute("tabindex","1")
             NuevaFila.innerHTML+=`<td class="celda id">${i+1}</td>
-            <td class="celda l3">${Codigo}</td>
+            <td class="celda l3 codigo">${Codigo}</td>
             <td class="celda center">${Modalidad}</td>
             <td class="celda l1">${Titulo}</td>
             <td class="celda l3">${Beneficiario}</td>
