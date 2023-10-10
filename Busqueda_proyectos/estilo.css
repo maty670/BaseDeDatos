@@ -5,6 +5,7 @@ body {
   background-size: cover;
   font-family: monospace;
   overflow: hidden;					/*Se pondra visible una vez cargada la pagina (archivo load.js) */
+  background-image: url("../Recursos/fondo.jpg");
 }
 
 /* width */

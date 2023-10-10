@@ -39,7 +39,7 @@
 
 	
 <div class="body-container">
-<body background='../Recursos/fondo.jpg' >
+<body>
 
 <?php include ("../nav.php")?>
 
