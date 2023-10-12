@@ -46,10 +46,27 @@
 
 
 
-  @font-face {
-    font-family: Karla;
-    src: url(../fonts/Karla/Karla-VariableFont_wght.ttf);
-  }
+@font-face {
+  font-family: Karla;
+  src: url(../fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+.btn_excel{
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding: 10px 0;
+}
+	
+.btn_excel *{
+		font-family: verdana;
+		font-size: 1.2rem;
+		color:black;
+}
+	
+.btn_excel i{
+			color:green;
+}
 
 .contenedor_tabla{
 	position: relative;

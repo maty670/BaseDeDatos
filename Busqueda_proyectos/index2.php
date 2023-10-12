@@ -89,7 +89,7 @@ echo $op1;
                 ?>
             <tr><td class="space"></td></tr>
             <tr class="parametros">
-                <td><input size="" type="text" class="input_text" autocomplete="off" name="<?php echo $busqueda?>" value="<?php echo isset($_POST[$busqueda]) ?$_POST[$busqueda] : '' ?>"></td>
+                <td><input type="text" class="input_text" autocomplete="off" name="<?php echo $busqueda?>" value="<?php echo isset($_POST[$busqueda]) ?$_POST[$busqueda] : '' ?>"></td>
                 <td>	
                     <label for="<?php echo $operacion?>"> </label>
 
