@@ -34,6 +34,7 @@
 			<td class="titulo w2"><textarea readonly>Correo Director</textarea></td>
 			<td class="titulo w3"><textarea readonly>Organización Vinculante</textarea></td>
 			<td class="titulo w3"><textarea readonly>Correo Organizacion Vinculante</textarea></td>
+			<td class="titulo w3"><textarea readonly>Palabras Claves</textarea></td>
 			<td class="titulo w2"><textarea readonly>Monto ANR</textarea></td>
 			<td class="titulo w2"><textarea readonly>Convocatoria</textarea></td>
 			<td class="titulo w1"><textarea readonly>Año</textarea></td>

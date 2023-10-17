@@ -1,9 +1,9 @@
 <?php
 	
 	if(isset($_POST['modo_busqueda'])){
-	$modo='OR';
+		$modo='OR';
 	}else{
-	$modo='AND';
+		$modo='AND';
 	}
 
 
@@ -40,7 +40,7 @@
 	
 	if($palabra1=='' AND $palabra2=='' AND $palabra3=='' AND $palabra4=='' AND $palabra5=='' ){
 			$tabla_completa='SI';	
-		}
+	}
 	
 
 	if($modo=="OR" AND $palabra1=="" AND $palabra2=="" AND $palabra3=="" AND $palabra4=="" AND $palabra5==""){
@@ -67,7 +67,7 @@
 	if($tabla_completa=='SI'){
 	$consulta="  SELECT `Codigo`,`Titulo`,`Beneficiario`,`Beneficiario_Correo`,`Beneficiario_Departamento`,`Beneficiario_Localidad`,`Director`,
 				`Director_Correo`,`Organizacion_Vinculante`,
-				`Organizacion_Vinculante_Correo`,
+				`Organizacion_Vinculante_Correo`,`Palabras_Claves`,
 				replace(replace(replace(format(`Monto_ANR`,2),'.','-'),',','.'),'-',',') AS `Monto_ANR`,
 				`Convocatoria`,`Año`,`Admisibilidad`,`Financiacion`,`Puntaje`,`Modalidad`
 				 FROM  `Proyectos`
@@ -75,7 +75,7 @@
 				 AND (Financiacion LIKE '$f%' AND Admisibilidad LIKE '$a%' AND Modalidad LIKE '%$m%')";
 	}else{
 	$consulta=" SELECT `Codigo`,`Titulo`,`Beneficiario`,`Beneficiario_Correo`,`Beneficiario_Departamento`,`Beneficiario_Localidad`,`Director`,
-				`Director_Correo`,`Organizacion_Vinculante`,`Organizacion_Vinculante_Correo`,
+				`Director_Correo`,`Organizacion_Vinculante`,`Organizacion_Vinculante_Correo`,`Palabras_Claves`,
 				replace(replace(replace(format(`Monto_ANR`,2),'.','-'),',','.'),'-',',') AS `Monto_ANR`,
 				`Convocatoria`,`Año`,`Admisibilidad`,`Financiacion`,`Puntaje`,`Modalidad`
 				FROM `Proyectos`

@@ -95,12 +95,13 @@ echo $op1;
 
                     <select name="<?php echo $operacion?>" class="select">	
                     <option <?php if($op == 'Codigo' || ($op=="" AND $i==0)){echo("selected");}?> > Codigo </option>
-                    <option <?php if($op == 'Titulo' || ($op=="" AND $i==1)){echo("selected");}?>> Titulo </option>
-                    <option <?php if($op == 'Beneficiario' || ($op=="" AND $i==2)){echo("selected");}?>> Beneficiario </option>
+                    <option> Titulo </option>
+                    <option <?php if($op == 'Beneficiario' || ($op=="" AND $i==1)){echo("selected");}?>> Beneficiario </option>
                     <option value="Beneficiario_Departamento"<?php if($op == 'Beneficiario_Departamento'){echo("selected");}?>> Beneficiario Departamento </option>
                     <option value="Beneficiario_Localidad"<?php if($op == 'Beneficiario_Localidad'){echo("selected");}?>> Beneficiario Localidad </option>
-                    <option <?php if($op == 'Director' || ($op=="" AND $i==3)){echo("selected");}?>> Director </option>
+                    <option <?php if($op == 'Director' || ($op=="" AND $i==2)){echo("selected");}?>> Director </option>
                     <option value="Organizacion_Vinculante"<?php if($op == 'Organizacion_Vinculante'){echo("selected");}?>> Organizacion Vinculante </option>
+                    <option value="Palabras_Claves"<?php if($op == 'Palabras_Claves' || ($op=="" AND $i==3)){echo("selected");}?>> Palabras Claves </option>
                     <option <?php if($op == 'Convocatoria' || ($op=="" AND $i==4)){echo("selected");}?>> Convocatoria </option>
                     </select>
                 </td>
@@ -130,10 +131,8 @@ echo $op1;
 
         <tr>
             <td colspan="2"><p>Entre</p>
-                <label for="aMin"></label>
                 <input type="number" class="input_anios" name="aMin" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMin']) ?$_POST['aMin'] : '2020' ?>" />
                 <p>y</p>
-                <label for="aMax"></label>
                 <input type="number" class="input_anios" name="aMax" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMax']) ?$_POST['aMax'] : '2022' ?>" />
             </td>
         </tr>
@@ -144,7 +143,6 @@ echo $op1;
 
         <tr>
             <td colspan="2">
-                <label for="modalidad"> </label>
                 <select name="modalidad" class="select select2">	
                     <option <?php if($m == 'Todas'| $m ==''){echo("selected");}?> > Todas </option>
                     <option <?php if($m == 'A'){echo("selected");}?>>A</option>
@@ -160,7 +158,6 @@ echo $op1;
 
         <tr>
             <td colspan="2">
-                <label for="admisibilidad"> </label>
                 <select name="admisibilidad" class="select select2">	
                     <option <?php if($a == 'Todos'| $a ==''){echo("selected");}?> > Todos </option>
                     <option <?php if($a == 'Admitido'){echo("selected");}?> > Admitido </option>
@@ -171,12 +168,11 @@ echo $op1;
 
 
         <tr><td class="space"></td></tr>
-        <tr><th colspan="2">Financiacion</th></tr>
+        <tr><th colspan="2">Financiación</th></tr>
         <tr><td class="space"></td></tr>
 
         <tr>
             <td colspan="2">
-                <label for="financiacion"> </label>
                 <select name="financiacion" class="select select2">	
                     <option <?php if($f == 'Todos'| $f ==''){echo("selected");}?> > Todos </option>
                     <option <?php if($f == 'Financiado'){echo("selected");}?> > Financiado </option>
