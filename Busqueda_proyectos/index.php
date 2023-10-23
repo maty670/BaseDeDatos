@@ -200,7 +200,7 @@ echo $op1;
     </form>
 
 
-
+    <?php include ("dropdown/dropdown.php")?>
 
     <?php	
 	if(isset($_POST['limpiar'])){
@@ -224,6 +224,5 @@ echo $op1;
 </div>
 
 <script type="text/javascript" src="load/load.js"></script>
-<script type="text/javascript" src="dropdown/dropdown.js"></script>
 <script type="text/javascript" src="paginacion/paginacion.js"></script>
 </html>
