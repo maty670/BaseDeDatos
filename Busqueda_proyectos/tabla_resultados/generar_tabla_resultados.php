@@ -23,10 +23,9 @@
 		
         var ac = JSON.stringify(<?php echo json_encode($array_columnas);?>).replace(/null/g,'""');
         var array_columnas = JSON.parse(ac);
-
         var am = JSON.stringify(<?php echo json_encode($array_modalidad);?>).replace(/null/g,'""');
         var array_modalidad = JSON.parse(am);
-
+        
         var aa = JSON.stringify(<?php echo json_encode($array_admisibilidad);?>).replace(/null/g,'""');
         var array_admisibilidad = JSON.parse(aa);
 
@@ -148,24 +147,24 @@
             NuevaFila.setAttribute("class","tr_celda")
             NuevaFila.setAttribute("tabindex","1")
             NuevaFila.innerHTML+=`<td class="celda id">${i+1}</td>
-            <td class="celda l3 codigo">${Codigo}</td>
+            <td class="celda l1 codigo">${Codigo}</td>
             <td class="celda center">${Modalidad}</td>
             <td class="celda l1">${Titulo}</td>
-            <td class="celda l3">${Beneficiario}</td>
+            <td class="celda l2">${Beneficiario}</td>
             <td class="celda l2">${registros[i].Beneficiario_Correo}</td>
-            <td class="celda l4">${Departamento}</td>
-			<td class="celda l4">${Localidad}</td>
-            <td class="celda l3">${Director}</td>
+            <td class="celda l2">${Departamento}</td>
+			<td class="celda l2">${Localidad}</td>
+            <td class="celda l2">${Director}</td>
 			<td class="celda l1">${registros[i].Director_Correo}</td>
             <td class="celda l1">${Organizacion_Vinculante}</td>
 			<td class="celda l2">${registros[i].Organizacion_Vinculante_Correo}</td>
-            <td class="celda l2">${registros[i].Palabras_Claves}</td>
+            <td class="celda l2">${Palabras_Claves}</td>
             <td class="celda center">${registros[i].Monto_ANR}</td>
-            <td class="celda l3">${Convocatoria}</td>
+            <td class="celda l1">${Convocatoria}</td>
             <td class="celda center">${registros[i].Año}</td>
-            <td class="celda l4">${Admisibilidad}</td>
-            <td class="celda l4">${Financiacion}</td>
-            <td class="celda l4">${registros[i].Puntaje}</td>`;
+            <td class="celda l1">${Admisibilidad}</td>
+            <td class="celda l1">${Financiacion}</td>
+            <td class="celda l2">${registros[i].Puntaje}</td>`;
             tabla_resultados.append(NuevaFila)
         }
     }
