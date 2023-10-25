@@ -38,12 +38,14 @@
         for(let i =0;i<array_palabras.length;i++){
             frase = quitarAcentos(array_palabras[i])
             new_array_palabras.push(frase)
+            
         }
-
+        
 
 
         /* Agregarle a cada coincidencias de las palabras, una etiqueta div*/
         string = quitarAcentos(string)
+        
 
         if(nombre_columna=="Modalidad"){
             if(array_modalidad[0]!=""){
@@ -64,7 +66,8 @@
         }else{
             for (i=0;i<array_palabras.length;i++){
                 if(array_palabras[i]!="" && array_columnas[i]==nombre_columna){
-                    const regex = new RegExp('(' + array_palabras[i].replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + ')', 'gi');
+                    palabra = quitarAcentos(array_palabras[i])
+                    const regex = new RegExp('(' + palabra.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + ')', 'gi');
                     string = string.replace(regex, "<div class='texto_resaltado'>" + '$1' + '</div>');
                 }
             }
@@ -72,7 +75,7 @@
         
 
 
-
+        
         return string
 
     }

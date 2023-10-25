@@ -43,6 +43,7 @@ CREATE TRIGGER before_insert_Proyectos
 BEFORE INSERT ON Proyectos
 FOR EACH ROW
 BEGIN
+
     IF NEW.Codigo IS NULL THEN
         SET NEW.Codigo = '-';
     END IF;
@@ -107,6 +108,11 @@ BEGIN
         SET NEW.Puntaje = '-';
     END IF;
 	
+
+    SET NEW.Director = REPLACE(NEW.Director, ',', '');
+	
 END;
 //
+-- Si algun valor es NULL, sera reemplazado por defecto por -
+-- Eliminar en la columna Director todas las comas
 DELIMITER ;
