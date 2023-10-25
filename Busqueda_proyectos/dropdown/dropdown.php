@@ -121,7 +121,18 @@
     
     }
 
-    // Obtener desde PHP el listado de convocatorias,directores desde 'consultas_dropdown.php'
+    window.addEventListener("click",(e)=>{
+        if(! ((e.target.classList.contains("dropdown_item")) || (e.target.classList.contains("input_text")))){
+            for(let i=0;i<array_dropdown.length;i++){
+                array_dropdown[i].classList.remove("active");
+            }
+        }
+    })
+
+
+
+    
+    //////// Obtener desde PHP el listado de convocatorias,directores desde 'consultas_dropdown.php' ////////
     var lc = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Convocatorias);?>).replace(/null/g,'""'));
     var ld = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Directores);?>).replace(/null/g,'""'));
     var lb = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Beneficiarios);?>).replace(/null/g,'""'));
@@ -142,13 +153,7 @@
     iniciar_actionListener("Convocatoria",listado_Convocatorias);
 
 
-    window.addEventListener("click",(e)=>{
-        if(! ((e.target.classList.contains("dropdown_item")) || (e.target.classList.contains("input_text")))){
-            for(let i=0;i<array_dropdown.length;i++){
-                array_dropdown[i].classList.remove("active");
-            }
-        }
-    })
+    
     
 
     
