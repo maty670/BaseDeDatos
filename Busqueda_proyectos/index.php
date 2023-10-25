@@ -38,7 +38,9 @@ if(isset($_POST['buscar'])){
 	$mod = "";
 }
 
-echo $op1;
+
+
+
 ?>
 </style>
 
@@ -47,6 +49,7 @@ echo $op1;
 <body>
 
 <?php include ("../nav.php")?>
+<?php include ("dropdown/consultas_dropdown.php")?>
 
 
     <div class="reload-container">

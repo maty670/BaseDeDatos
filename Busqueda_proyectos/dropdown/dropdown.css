@@ -6,22 +6,24 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    width: 100%;
+    left:8px;
+    background-color: #e9eef5;
+    width: 92%;
     max-height: 120px;
     overflow-y: auto;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     z-index: 1;
 }
 
-.dropdown-content a {
-    color: black;
+.dropdown-content .dropdown_item{
     padding: 5px 0px;
     text-decoration: none;
     display: block;
+    text-align: left;
+    font-size: 0.8rem;
 }
 
-.dropdown-content a:hover {
+.dropdown-content .dropdown_item:hover {
     cursor: pointer;
     background-color: #c1c1c1;
 }
