@@ -193,8 +193,14 @@ if(isset($_POST['buscar'])){
         <tr><td class="space"></td></tr>
 
         <tr class="tr_botones">
-            <td class="td_buscar"><input class="btn" type="submit" name="buscar" value="Buscar"></td>
-            <td class="td_limpiar"><input class="btn" type="submit" name="limpiar" value="Limpiar"></td>
+            <td class="td_buscar">
+                <img src="svg/find.svg" alt="">
+                <input class="btn" type="submit" name="buscar" value="Buscar">
+            </td>
+            <td class="td_limpiar">
+                <img src="svg/refresh.svg" alt="">
+                <input class="btn" type="submit" name="limpiar" value="Limpiar">
+            </td>
         </tr>
 
 

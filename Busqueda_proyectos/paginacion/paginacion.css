@@ -22,11 +22,12 @@
     background-color: #ffffff;
     color: #3f82bb;
     font-weight: 700;
-    cursor:pointer
+    cursor:pointer;
+    transition: 0.5s;
 }
 
 .pagina:hover{
-    background-color: #238af7d2;
+    background-color: #0078f8ef;
     color:#fff
 }
 

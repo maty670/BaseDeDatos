@@ -50,8 +50,11 @@
                 array_items = document.getElementsByClassName("dropdown_item")
                 for(let j=0;j<array_items.length;j++){
                     array_items[j].addEventListener("click",()=>{
-                        array_inputText[i].value = array_items[j].textContent
-                        actualizar_dropdown(array_inputText[i],array_dropdown[i],"itemClick",listado);
+                        if(array_inputText[i].parentElement.classList.contains("active")){
+                            array_inputText[i].value = array_items[j].textContent
+                            actualizar_dropdown(array_inputText[i],array_dropdown[i],"itemClick",listado)
+                        }
+                        
                     })
                 }
 
@@ -64,8 +67,10 @@
                 array_items = document.getElementsByClassName("dropdown_item")
                 for(let j=0;j<array_items.length;j++){
                     array_items[j].addEventListener("click",()=>{
-                        array_inputText[i].value = array_items[j].textContent
-                        actualizar_dropdown(array_inputText[i],array_dropdown[i],"itemClick",listado);
+                        if(array_inputText[i].parentElement.classList.contains("active")){
+                            array_inputText[i].value = array_items[j].textContent
+                            actualizar_dropdown(array_inputText[i],array_dropdown[i],"itemClick",listado)
+                        }
                     })
                 }
 
@@ -121,13 +126,17 @@
     
     }
 
-    window.addEventListener("click",(e)=>{
-        if(! ((e.target.classList.contains("dropdown_item")) || (e.target.classList.contains("input_text")))){
-            for(let i=0;i<array_dropdown.length;i++){
-                array_dropdown[i].classList.remove("active");
+    // Cerrar todos los dropdown abierto
+    function cerrar_dropdown(){
+        window.addEventListener("click",(e)=>{
+            if(! ((e.target.classList.contains("dropdown_item")) || (e.target.classList.contains("input_text")))){
+                for(let i=0;i<array_dropdown.length;i++){
+                    array_dropdown[i].classList.remove("active");
+                }
             }
-        }
-    })
+        })
+    }
+    
 
 
 
@@ -151,7 +160,7 @@
     iniciar_actionListener("Beneficiario",listado_Beneficiarios);
     iniciar_actionListener("Director",listado_Directores);
     iniciar_actionListener("Convocatoria",listado_Convocatorias);
-
+    cerrar_dropdown();
 
     
     

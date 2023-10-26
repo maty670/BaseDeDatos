@@ -59,7 +59,7 @@ body::-webkit-scrollbar-track{
    
 /* Handle */
 body::-webkit-scrollbar-thumb{
-    background: #34495e;
+    background: #557696;
 }
   
 /* Handle on hover */
@@ -268,9 +268,30 @@ table.busqueda .select2{
   font-size: 0.85rem;
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 10px 7px;
+  padding: 10px 1.15rem 10px 5px;
   cursor:pointer;
   font-weight: bold;
+  z-index: 5;
+}
+
+.tr_botones .td_buscar img{
+  position: absolute;
+  text-align: right;
+  width: 1.15rem;
+  margin-top: 0.67rem;
+  margin-left: 4.3rem;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.tr_botones .td_limpiar img{
+  position: absolute;
+  text-align: right;
+  width: 1.15rem;
+  margin-top: 0.67rem;
+  margin-left: 4.58rem;
+  z-index: 3;
+  pointer-events: none;
 }
 
 .tr_botones .td_buscar input:hover,
