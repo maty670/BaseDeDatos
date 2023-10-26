@@ -47,7 +47,7 @@
 
                 actualizar_dropdown(array_inputText[i],array_dropdown[i],evt,listado);
 
-                array_items = document.getElementsByClassName("dropdown_item")
+                array_items = array_dropdown[i].children[1].children
                 for(let j=0;j<array_items.length;j++){
                     array_items[j].addEventListener("click",()=>{
                         if(array_inputText[i].parentElement.classList.contains("active")){
@@ -64,10 +64,11 @@
 
                 actualizar_dropdown(array_inputText[i],array_dropdown[i],evt,listado);
 
-                array_items = document.getElementsByClassName("dropdown_item")
+                array_items = array_dropdown[i].children[1].children
                 for(let j=0;j<array_items.length;j++){
                     array_items[j].addEventListener("click",()=>{
                         if(array_inputText[i].parentElement.classList.contains("active")){
+                            
                             array_inputText[i].value = array_items[j].textContent
                             actualizar_dropdown(array_inputText[i],array_dropdown[i],"itemClick",listado)
                         }
@@ -141,14 +142,11 @@
 
 
     
-    //////// Obtener desde PHP el listado de convocatorias,directores desde 'consultas_dropdown.php' ////////
-    var lc = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Convocatorias);?>).replace(/null/g,'""'));
+    //////// Obtener desde PHP los listados de 'consultas_dropdown.php' ////////
     var ld = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Directores);?>).replace(/null/g,'""'));
-    var lb = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Beneficiarios);?>).replace(/null/g,'""'));
-
+    var lc = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Convocatorias);?>).replace(/null/g,'""'));
     
-    listado_Beneficiarios=[];
-    for (x of lb){  listado_Beneficiarios.push(x.Beneficiario)};
+    
     
     listado_Directores=[];
     for (x of ld){  listado_Directores.push(x.Director)};
@@ -156,8 +154,6 @@
     listado_Convocatorias=[];
     for (x of lc){  listado_Convocatorias.push(x.Convocatoria)};
 
-
-    iniciar_actionListener("Beneficiario",listado_Beneficiarios);
     iniciar_actionListener("Director",listado_Directores);
     iniciar_actionListener("Convocatoria",listado_Convocatorias);
     cerrar_dropdown();
