@@ -18,10 +18,10 @@ body {
     --font-size-title: 1.3rem;
     --font-size-select: 1rem;
 
-    --width_inputText: 88%;
-    --padding_inputText: 5px 3px;
+    --width_inputText: 18rem;
+    --padding_inputText: 8px 6px;
 
-    --padding_select: 5px 3px;
+    --padding_select: 8px 6px;
 }
 
 @font-face {
@@ -73,13 +73,12 @@ body::-webkit-scrollbar-thumb:hover{
 
 table.busqueda{
     display: block;
-    margin: 50px auto;
+    margin: 5% auto;
     height: 70%;
     border-collapse: collapse;
     
-	width: fit-content;
+	  width: fit-content;
     padding:0px;
-    top:50px;
     background-color:#fff;
     border:3px solid #99bbff;
 }
@@ -92,7 +91,7 @@ table.busqueda * {
 table.busqueda td,tr,th{
     Word-wrap: break-Word;
     text-align: center;
-	width: fit-content;
+	  width: fit-content;
 }
 
 tr td.space{
@@ -104,8 +103,7 @@ table.busqueda th{
     color: #193366;
     font-size: var(--font-size-title);
     font-weight: bold;
-    border-top: 1px solid #99bbff;
-    border-bottom: 1px solid #99bbff;
+    outline: 1px solid #99bbff;
 }
 
 table.busqueda .input_text {
@@ -113,31 +111,31 @@ table.busqueda .input_text {
 	border: 3px inset #d9d9d9;
 	width: var(--width_inputText);
 	text-align:left;
-  	height: 1.2rem;
+  height: 1.2rem;
+  margin: 0 10px 0 20px;
 }
 
 table.busqueda .select{
 	font-size: var(--font-size-select);
 	border: 3px inset #9fbfdf;
 	width: var(--width_inputText);
-  	height: 1.7rem;
+  height: 1.7rem;
 	text-align:left;
+  margin: 0 20px 0 10px;
 }
 
 table.busqueda .select2{
-  width: 10rem;
+  width: 15rem;
   text-align: center;
 }
 
 .input_anios{
   font-size: var(--font-size-select);
-  text-align: center;
 	border: 3px inset #9fbfdf;
-	width: 3.8rem;
-  padding: var(--padding_select);
+	width: 4.5rem;
+  padding: 5px 3px;
   height: 1rem;
-	text-align:left;
-  padding: var(--padding_select);
+	text-align: center;
 }
 
 
@@ -265,7 +263,7 @@ table.busqueda .select2{
   width: 50%;
   background: linear-gradient(to bottom, #7699df, #294557);
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 10px 1.15rem 10px 5px;
@@ -277,9 +275,9 @@ table.busqueda .select2{
 .tr_botones .td_buscar img{
   position: absolute;
   text-align: right;
-  width: 1.15rem;
-  margin-top: 0.67rem;
-  margin-left: 4.3rem;
+  width: 1.4rem;
+  margin-top: 0.75rem;
+  margin-left: 7rem;
   z-index: 3;
   pointer-events: none;
 }
@@ -287,9 +285,9 @@ table.busqueda .select2{
 .tr_botones .td_limpiar img{
   position: absolute;
   text-align: right;
-  width: 1.15rem;
-  margin-top: 0.67rem;
-  margin-left: 4.58rem;
+  width: 1.4rem;
+  margin-top: 0.75rem;
+  margin-left: 6.92rem;
   z-index: 3;
   pointer-events: none;
 }
