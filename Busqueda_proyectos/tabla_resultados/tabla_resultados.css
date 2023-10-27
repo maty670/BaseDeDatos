@@ -1,7 +1,7 @@
 :root{
-    --background_blue:#405367;
+    --background_blue:linear-gradient(to bottom, #718bbe, #4f6286);;
     --background_light_blue: #c8e2fd;
-    --color_white: #fff;
+    --color_white: #eee;
 
 
     --height_titulo:2rem;

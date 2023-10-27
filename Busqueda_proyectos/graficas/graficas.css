@@ -93,9 +93,10 @@ body{
 
 .btnMas{
 	width: fit-content;
-	background-color: DodgerBlue;
+	background: linear-gradient(to bottom, #819eda, #657dac);
 	border: none;
-	color: white;
+	color: #eee;
+	font-weight: bold;
 	padding: 5px 8px;
 	font-size: 0.85rem;
 	cursor: pointer;
