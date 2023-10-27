@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="load/load.css">
     <link rel="stylesheet" type="text/css" href="dropdown/dropdown.css">
     <script src="https://kit.fontawesome.com/8e82b560a5.js" crossorigin="anonymous"></script>
-
 </head>
 <style>
 <?php
@@ -190,19 +189,21 @@ if(isset($_POST['buscar'])){
             </td>
         </tr>
 
-        <tr><td class="space"></td></tr>
 
         <tr class="tr_botones">
-            <td class="td_buscar">
-                <img src="svg/find.svg" alt="">
-                <input class="btn" type="submit" name="buscar" value="Buscar">
-            </td>
-            <td class="td_limpiar">
-                <img src="svg/refresh.svg" alt="">
-                <input class="btn" type="submit" name="limpiar" value="Limpiar">
+            <td colspan="2">
+                <div class="contenedor_botones">
+                    <div class="div_buscar">
+                        <img src="svg/find.svg" alt="">
+                        <input class="btn" type="submit" name="buscar" value="Buscar">
+                    </div>
+                    <div class="div_limpiar">
+                        <img src="svg/rotate-solid.svg" alt="">
+                        <input class="btn" type="submit" name="limpiar" value="Limpiar">
+                    </div>
+                </div>
             </td>
         </tr>
-
 
         </table>
 
