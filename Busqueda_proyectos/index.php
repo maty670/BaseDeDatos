@@ -87,7 +87,8 @@ if(isset($_POST['buscar'])){
                         $busqueda = "busqueda5";
                         $operacion = "operacion5";
                     }
-                
+
+                echo $op;
 
                 ?>
             <tr><td class="space"></td></tr>
@@ -100,17 +101,16 @@ if(isset($_POST['buscar'])){
                 </td>
                 <td>	
                     <label for="<?php echo $operacion?>"> </label>
-
                     <select name="<?php echo $operacion?>" class="select select_operacion" id="<?php echo $operacion?>">	
-                    <option <?php if($op == 'Codigo' || ($op=="" AND $i==0)){echo("selected");}?> > Codigo </option>
-                    <option> Titulo </option>
-                    <option <?php if($op == 'Beneficiario' || ($op=="" AND $i==1)){echo("selected");}?>> Beneficiario </option>
-                    <option value="Beneficiario_Departamento"<?php if($op == 'Beneficiario_Departamento'){echo("selected");}?>> Beneficiario Departamento </option>
-                    <option value="Beneficiario_Localidad"<?php if($op == 'Beneficiario_Localidad'){echo("selected");}?>> Beneficiario Localidad </option>
-                    <option <?php if($op == 'Director' || ($op=="" AND $i==2)){echo("selected");}?>> Director </option>
-                    <option value="Organizacion_Vinculante"<?php if($op == 'Organizacion_Vinculante'){echo("selected");}?>> Organizacion Vinculante </option>
-                    <option value="Palabras_Claves"<?php if($op == 'Palabras_Claves' || ($op=="" AND $i==3)){echo("selected");}?>> Palabras Claves </option>
-                    <option <?php if($op == 'Convocatoria' || ($op=="" AND $i==4)){echo("selected");}?>> Convocatoria </option>
+                        <option <?php if($op == 'Codigo' || ($op=="" AND $i==0)){echo("selected");}?> > Codigo </option>
+                        <option <?php if($op == 'Titulo'){echo('selected');} ?>> Titulo </option>
+                        <option <?php if($op == 'Beneficiario' || ($op=="" AND $i==1)){echo("selected");}?>> Beneficiario </option>
+                        <option value="Beneficiario_Departamento"<?php if($op == 'Beneficiario_Departamento'){echo("selected");}?>> Beneficiario Departamento </option>
+                        <option value="Beneficiario_Localidad"<?php if($op == 'Beneficiario_Localidad'){echo("selected");}?>> Beneficiario Localidad </option>
+                        <option <?php if($op == 'Director' || ($op=="" AND $i==2)){echo("selected");}?>> Director </option>
+                        <option value="Organizacion_Vinculante"<?php if($op == 'Organizacion_Vinculante'){echo("selected");}?>> Organizacion Vinculante </option>
+                        <option value="Palabras_Claves"<?php if($op == 'Palabras_Claves' || ($op=="" AND $i==3)){echo("selected");}?>> Palabras Claves </option>
+                        <option <?php if($op == 'Convocatoria' || ($op=="" AND $i==4)){echo("selected");}?>> Convocatoria </option>
                     </select>
                 </td>
             </tr>
