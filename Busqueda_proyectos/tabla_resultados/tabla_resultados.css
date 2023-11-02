@@ -95,7 +95,6 @@
   position: sticky;
   top: 0px;
   z-index: 3;
-
 }
 
 
@@ -190,7 +189,8 @@ textarea:focus{
   white-space: normal;
 }
 
-.tabla_resultados td.codigo{
+.tabla_resultados td.codigo,
+.tabla_resultados tr.titulo td.codigo{
   position: sticky;
   left: 1px;
 }

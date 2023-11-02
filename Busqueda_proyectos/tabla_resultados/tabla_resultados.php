@@ -23,7 +23,7 @@
 	<table class='tabla_resultados' id="<?php echo $cantidad?>">
 		<tr class="tr_titulo" tabindex="1">
 			<td class="titulo">#</td>
-			<td class="titulo w2"><textarea readonly>Codigo</textarea></td>
+			<td class="titulo codigo w2"><textarea readonly>Codigo</textarea></td>
 			<td class="titulo w1"><textarea readonly>Modalidad</textarea></td>
 			<td class="titulo w2"><textarea readonly>Titulo</textarea></td>
 			<td class="titulo w2"><textarea readonly>Beneficiario</textarea></td>

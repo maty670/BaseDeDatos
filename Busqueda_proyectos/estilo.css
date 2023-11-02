@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 table.busqueda{
     display: block;
-    margin: 5% auto;
+    margin: 5% auto 50px auto;
     height: 70%;
     border-collapse: collapse;
     
@@ -302,29 +302,3 @@ table.busqueda .select2{
   box-shadow: 0px 0px 0px 3px transparent inset;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
