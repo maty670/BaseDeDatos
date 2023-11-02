@@ -88,7 +88,6 @@ if(isset($_POST['buscar'])){
                         $operacion = "operacion5";
                     }
 
-                echo $op;
 
                 ?>
             <tr><td class="space"></td></tr>
