@@ -1,3 +1,8 @@
+• CARGAR LOCALIDAD POSTULANTE Y LOCALIDAD DE RADICACION DEL PROYECTO POR SEPARADO
+• CARGAR AREAS ESTRATEGICAS
+• AGREGAR GASTOS CORRIENTES Y DE CAPITAL
+
+
 Proyectos que no se cargaron y faltantes:
 
 --------------------------------------2021-----------------------------------------------

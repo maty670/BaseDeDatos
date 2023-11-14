@@ -128,11 +128,6 @@
         borrar_filas_tr()
         for (let i=inicio; i<limite; i++){
             const NuevaFila = document.createElement("tr");
-            if(registros[i].Monto_ANR!=""){
-                Monto = '$' + registros[i].Monto_ANR
-            }else{
-                Monto = registros[i].Monto_ANR
-            }
 
             let Codigo = resaltarFrase(registros[i].Codigo,"Codigo")
             let Modalidad = resaltarFrase(registros[i].Modalidad,"Modalidad")
@@ -146,6 +141,13 @@
             let Convocatoria = resaltarFrase(registros[i].Convocatoria,"Convocatoria")
             let Admisibilidad = resaltarFrase(registros[i].Admisibilidad,"Admisibilidad")
             let Financiacion = resaltarFrase(registros[i].Financiacion,"Financiacion")
+
+            let Monto_ANR;
+            if(registros[i].Monto_ANR==""){
+                Monto_ANR = ""
+            }else{
+                Monto_ANR = "$ " + registros[i].Monto_ANR
+            }
 
             NuevaFila.setAttribute("class","tr_celda")
             NuevaFila.setAttribute("tabindex","1")
@@ -162,7 +164,7 @@
             <td class="celda l1">${Organizacion_Vinculante}</td>
 			<td class="celda l2">${registros[i].Organizacion_Vinculante_Correo}</td>
             <td class="celda l2">${Palabras_Claves}</td>
-            <td class="celda center">${registros[i].Monto_ANR}</td>
+            <td class="celda center">${Monto_ANR}</td>
             <td class="celda l1">${Convocatoria}</td>
             <td class="celda center">${registros[i].Año}</td>
             <td class="celda l1">${Admisibilidad}</td>
