@@ -63,13 +63,13 @@
 	<div class="espacio_btn_graficas">
 		<div id="btnTablaDep" class="btnMas">
 			<i class="fa-solid fa-table-cells"></i>
-			Tabla Departamentos
+			Tabla de Departamentos de Radicación de los proyectos
 			<i class="fa-regular fa-eye"></i>
 		</div>
 
 		<div id="btnGraficasDep" class="btnMas">
 			<i class="fa-solid fa-chart-simple"></i>
-			Gráficas Departamentos
+			Gráfica de Departamentos de Radicación de los proyectos
 			<i class="fa-regular fa-eye"></i>
 		</div>
 
@@ -116,13 +116,13 @@
 	<div class="espacio_btn_graficas">
 		<div id="btnTablaLoc" class="btnMas">
 			<i class="fa-solid fa-table-cells"></i>
-			Tabla Localidades
+			Tabla de Localidades de Radicación de los proyectos
 			<i class="fa-regular fa-eye"></i>
 		</div>
 
 		<div id="btnGraficasLoc" class="btnMas">
 			<i class="fa-solid fa-chart-simple"></i>
-			Gráficas Localidades
+			Gráfica de Localidades de Radicación de los proyectos
 			<i class="fa-regular fa-eye"></i>
 		</div>
 

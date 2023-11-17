@@ -23,18 +23,19 @@
 	<table class='tabla_resultados' id="<?php echo $cantidad?>">
 		<tr class="tr_titulo" tabindex="1">
 			<td class="titulo">#</td>
-			<td class="titulo codigo w2"><textarea readonly>Codigo</textarea></td>
+			<td class="titulo codigo w1"><textarea readonly>Codigo</textarea></td>
 			<td class="titulo w1"><textarea readonly>Modalidad</textarea></td>
 			<td class="titulo w2"><textarea readonly>Titulo</textarea></td>
 			<td class="titulo w2"><textarea readonly>Beneficiario</textarea></td>
-			<td class="titulo w3"><textarea readonly>Correo Beneficiario</textarea></td>
-			<td class="titulo w3"><textarea readonly>Departamento Beneficiario</textarea></td>
-			<td class="titulo w3"><textarea readonly>Localidad Beneficiario</textarea></td>
+			<td class="titulo w2"><textarea readonly>Correo Beneficiario</textarea></td>
+			<td class="titulo w3"><textarea readonly>Localidad del Beneficiario</textarea></td>
+			<td class="titulo w4"><textarea readonly>Departamento de radicación del proyecto</textarea></td>
+			<td class="titulo w4"><textarea readonly>Localidad de radicación del proyecto</textarea></td>
 			<td class="titulo w2"><textarea readonly>Director</textarea></td>
 			<td class="titulo w2"><textarea readonly>Correo Director</textarea></td>
 			<td class="titulo w3"><textarea readonly>Organización Vinculante</textarea></td>
-			<td class="titulo w3"><textarea readonly>Correo Organizacion Vinculante</textarea></td>
-			<td class="titulo w3"><textarea readonly>Palabras Claves</textarea></td>
+			<td class="titulo w2"><textarea readonly>Correo Organizacion Vinculante</textarea></td>
+			<td class="titulo w2"><textarea readonly>Palabras Claves</textarea></td>
 			<td class="titulo w2"><textarea readonly>Monto ANR</textarea></td>
 			<td class="titulo w2"><textarea readonly>Convocatoria</textarea></td>
 			<td class="titulo w1"><textarea readonly>Año</textarea></td>

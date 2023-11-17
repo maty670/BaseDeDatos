@@ -104,8 +104,9 @@ if(isset($_POST['buscar'])){
                         <option <?php if($op == 'Codigo' || ($op=="" AND $i==0)){echo("selected");}?> > Codigo </option>
                         <option <?php if($op == 'Titulo'){echo('selected');} ?>> Titulo </option>
                         <option <?php if($op == 'Beneficiario' || ($op=="" AND $i==1)){echo("selected");}?>> Beneficiario </option>
-                        <option value="Beneficiario_Departamento"<?php if($op == 'Beneficiario_Departamento'){echo("selected");}?>> Beneficiario Departamento </option>
-                        <option value="Beneficiario_Localidad"<?php if($op == 'Beneficiario_Localidad'){echo("selected");}?>> Beneficiario Localidad </option>
+                        <option value="Beneficiario_Localidad"<?php if($op == 'Beneficiario_Localidad'){echo("selected");}?>> Localidad del Beneficiario </option>
+                        <option value="Radicacion_Departamento"<?php if($op == 'Radicacion_Departamento'){echo("selected");}?>> Departamento de radicación del proyecto </option>
+                        <option value="Radicacion_Localidad"<?php if($op == 'Radicacion_Localidad'){echo("selected");}?>> Localidad de radicación del proyecto </option>
                         <option <?php if($op == 'Director' || ($op=="" AND $i==2)){echo("selected");}?>> Director </option>
                         <option value="Organizacion_Vinculante"<?php if($op == 'Organizacion_Vinculante'){echo("selected");}?>> Organizacion Vinculante </option>
                         <option value="Palabras_Claves"<?php if($op == 'Palabras_Claves' || ($op=="" AND $i==3)){echo("selected");}?>> Palabras Claves </option>
@@ -140,7 +141,7 @@ if(isset($_POST['buscar'])){
             <td colspan="2"><p>Entre</p>
                 <input type="number" class="input_anios" name="aMin" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMin']) ?$_POST['aMin'] : '2020' ?>" />
                 <p>y</p>
-                <input type="number" class="input_anios" name="aMax" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMax']) ?$_POST['aMax'] : '2022' ?>" />
+                <input type="number" class="input_anios" name="aMax" min="2000" max="2100" step="1" value="<?php echo isset($_POST['aMax']) ?$_POST['aMax'] : '2023' ?>" />
             </td>
         </tr>
 

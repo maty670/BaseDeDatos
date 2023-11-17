@@ -4,8 +4,9 @@ CREATE TABLE IF NOT EXISTS Proyectos (
     `Titulo` VARCHAR(255) DEFAULT '-',
     `Beneficiario` VARCHAR(255) DEFAULT '-',
     `Beneficiario_Correo` VARCHAR(255) DEFAULT '-',
-	`Beneficiario_Departamento` VARCHAR(255) DEFAULT '-',
-    `Beneficiario_Localidad` VARCHAR(255) DEFAULT '-',
+	`Beneficiario_Localidad` VARCHAR(255) DEFAULT '-',
+	`Radicacion_Departamento` VARCHAR(255) DEFAULT '-',
+    `Radicacion_Localidad` VARCHAR(255) DEFAULT '-',
     `Director` VARCHAR(255) DEFAULT '-',
     `Director_Correo` VARCHAR(255) DEFAULT '-',
     `Organizacion_Vinculante` VARCHAR(255) DEFAULT '-' ,
@@ -26,8 +27,9 @@ MODIFY COLUMN Modalidad TEXT,
 MODIFY COLUMN Titulo TEXT,
 MODIFY COLUMN Beneficiario TEXT,
 MODIFY COLUMN Beneficiario_Correo TEXT,
-MODIFY COLUMN Beneficiario_Departamento TEXT,
 MODIFY COLUMN Beneficiario_Localidad TEXT,
+MODIFY COLUMN Radicacion_Departamento TEXT,
+MODIFY COLUMN Radicacion_Localidad TEXT,
 MODIFY COLUMN Director TEXT,
 MODIFY COLUMN Director_Correo TEXT,
 MODIFY COLUMN Organizacion_Vinculante TEXT,
@@ -64,12 +66,16 @@ BEGIN
         SET NEW.Beneficiario_Correo = '-';
     END IF;
 	
-	IF NEW.Beneficiario_Departamento IS NULL THEN
-        SET NEW.Beneficiario_Departamento = '-';
-    END IF;
-	
 	IF NEW.Beneficiario_Localidad IS NULL THEN
         SET NEW.Beneficiario_Localidad = '-';
+    END IF;
+	
+	IF NEW.Radicacion_Departamento IS NULL THEN
+        SET NEW.Radicacion_Departamento = '-';
+    END IF;
+	
+	IF NEW.Radicacion_Localidad IS NULL THEN
+        SET NEW.Radicacion_Localidad = '-';
     END IF;
 	
 	IF NEW.Director IS NULL THEN

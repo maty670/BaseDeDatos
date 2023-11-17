@@ -133,8 +133,9 @@
             let Modalidad = resaltarFrase(registros[i].Modalidad,"Modalidad")
             let Titulo = resaltarFrase(registros[i].Titulo,"Titulo")
             let Beneficiario = resaltarFrase(registros[i].Beneficiario,"Beneficiario")
-            let Departamento = resaltarFrase(registros[i].Beneficiario_Departamento,"Beneficiario_Departamento")
-            let Localidad = resaltarFrase(registros[i].Beneficiario_Localidad,"Beneficiario_Localidad")
+            let Beneficiario_Localidad = resaltarFrase(registros[i].Beneficiario_Localidad,"Beneficiario_Localidad")
+            let Radicacion_Departamento = resaltarFrase(registros[i].Radicacion_Departamento,"Radicacion_Departamento")
+            let Radicacion_Localidad = resaltarFrase(registros[i].Radicacion_Localidad,"Radicacion_Localidad")
             let Director = resaltarFrase(registros[i].Director,"Director")
             let Organizacion_Vinculante = resaltarFrase(registros[i].Organizacion_Vinculante,"Organizacion_Vinculante")
             let Palabras_Claves = resaltarFrase(registros[i].Palabras_Claves,"Palabras_Claves")
@@ -157,8 +158,9 @@
             <td class="celda l1">${Titulo}</td>
             <td class="celda l2">${Beneficiario}</td>
             <td class="celda l2">${registros[i].Beneficiario_Correo}</td>
-            <td class="celda l2">${Departamento}</td>
-			<td class="celda l2">${Localidad}</td>
+            <td class="celda l2">${Beneficiario_Localidad}</td>
+            <td class="celda l2">${Radicacion_Departamento}</td>
+			<td class="celda l2">${Radicacion_Localidad}</td>
             <td class="celda l2">${Director}</td>
 			<td class="celda l1">${registros[i].Director_Correo}</td>
             <td class="celda l1">${Organizacion_Vinculante}</td>

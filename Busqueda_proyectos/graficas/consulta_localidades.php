@@ -3,13 +3,13 @@
 $datosMontosLocalidades1 = array();
 
 //Consulta de proyectos agrupados por localidad
-$consulta_Loc="SELECT COUNT(*) AS `Cantidad`,`Beneficiario_Localidad` AS `Localidad`,
+$consulta_Loc="SELECT COUNT(*) AS `Cantidad`,`Radicacion_Localidad` AS `Localidad`,
 				 	 SUM(Monto_ANR)AS `SUMA_ANR`
 					 FROM (SELECT * FROM `Proyectos`
 					WHERE ($columna1 LIKE '%$palabra1%' $modo $columna2 LIKE '%$palabra2%' $modo $columna3 LIKE '%$palabra3%' $modo $columna4 LIKE '%$palabra4%' $modo $columna5 LIKE '%$palabra5%')
 					AND (Año >= $aMin  AND Año <= $aMax)
 					AND (Financiacion LIKE '$f%' AND Admisibilidad LIKE '$a%' AND Modalidad LIKE '%$m%'))AS A 
-		   		    GROUP BY `Beneficiario_Localidad`
+		   		    GROUP BY `Radicacion_Localidad`
 		   		    ORDER BY `SUMA_ANR`";
 
 		$consulta_por_Loc=$base->query($consulta_Loc);
@@ -53,13 +53,13 @@ $datosCantidadLocalidades1 = array();
 $datosMontosLocalidades2 = array();
 
 //Consulta de proyectos agrupados por localidad
-$consulta_Loc="SELECT COUNT(*) AS `Cantidad`,`Beneficiario_Localidad` AS `Localidad`,
+$consulta_Loc="SELECT COUNT(*) AS `Cantidad`,`Radicacion_Localidad` AS `Localidad`,
 				 	 SUM(Monto_ANR)AS `SUMA_ANR`
 					 FROM (SELECT * FROM `Proyectos`
 					WHERE ($columna1 LIKE '%$palabra1%' $modo $columna2 LIKE '%$palabra2%' $modo $columna3 LIKE '%$palabra3%' $modo $columna4 LIKE '%$palabra4%' $modo $columna5 LIKE '%$palabra5%')
 					AND (Año >= $aMin  AND Año <= $aMax)
 					AND (Financiacion LIKE '$f%' AND Admisibilidad LIKE '$a%' AND Modalidad LIKE '%$m%'))AS A 
-		   		    GROUP BY `Beneficiario_Localidad`
+		   		    GROUP BY `Radicacion_Localidad`
 		   		    ORDER BY `Cantidad`";
 
 		$consulta_por_Loc=$base->query($consulta_Loc);

@@ -610,12 +610,12 @@ let ejeX = "12";
 			if (tablaDepartamentos.className == "resultados_dep_hidden") {
 				tablaDepartamentos.className = "resultados_dep resultados";
 				btnTablaDep.innerHTML = `<i class="fa-solid fa-table-cells"></i>
-										  Tabla Departamentos
+										Tabla de Departamentos de Radicación de los proyectos
 										  <i class="fa-regular fa-eye-slash"></i>`
 			}else{
 				tablaDepartamentos.className = "resultados_dep_hidden";
 				btnTablaDep.innerHTML = `<i class="fa-solid fa-table-cells"></i>
-										  Tabla Departamentos
+										Tabla de Departamentos de Radicación de los proyectos
 										  <i class="fa-regular fa-eye"></i>`
 				
 			}
@@ -625,7 +625,7 @@ let ejeX = "12";
 			if(graficaMontosDepartamentos.className == "graficasVisible") {
 
 				btnGraficasDep.innerHTML = `<i class="fa-solid fa-chart-simple"></i> 
-											 Gráficas Departamentos
+											Gráfica de Departamentos de Radicación de los proyectos
 											 <i class="fa-regular fa-eye"></i>`;
 
 				graficaMontosDepartamentos.className = "graficasHidden";
@@ -635,7 +635,7 @@ let ejeX = "12";
 			}else{
 
 				btnGraficasDep.innerHTML = `<i class="fa-solid fa-chart-simple"></i> 
-											 Gráficas Departamentos
+											Gráfica de Departamentos de Radicación de los proyectos
 											 <i class="fa-regular fa-eye-slash"></i>`;
 
 				graficaMontosDepartamentos.className = "graficasVisible";
@@ -780,12 +780,12 @@ let ejeX = "12";
 			if (tablaLocalidades.className == "resultados_loc_hidden") {
 				tablaLocalidades.className = "resultados_loc resultados";
 				btnTablaLoc.innerHTML = `<i class="fa-solid fa-table-cells"></i>
-										  Tabla Localidades
+										Tabla de Localidades de Radicación de los proyectos
 										  <i class="fa-regular fa-eye-slash"></i>`
 			}else{
 				tablaLocalidades.className = "resultados_loc_hidden";
 				btnTablaLoc.innerHTML = `<i class="fa-solid fa-table-cells"></i>
-										  Tabla Localidades
+										Tabla de Localidades de Radicación de los proyectos
 										  <i class="fa-regular fa-eye"></i>`
 				
 			}
@@ -795,7 +795,7 @@ let ejeX = "12";
 			if(graficaMontosLocalidades.className == "graficasVisible") {
 
 				btnGraficasLoc.innerHTML = `<i class="fa-solid fa-chart-simple"></i> 
-											 Gráficas Localidades
+											Gráfica de Localidades de Radicación de los proyectos
 											 <i class="fa-regular fa-eye"></i>`;
 
 				graficaMontosLocalidades.className = "graficasHidden";
@@ -806,7 +806,7 @@ let ejeX = "12";
 			}else{
 
 				btnGraficasLoc.innerHTML = `<i class="fa-solid fa-chart-simple"></i> 
-											 Gráficas Localidades
+											Gráfica de Localidades de Radicación de los proyectos
 											 <i class="fa-regular fa-eye-slash"></i>`;
 
 				graficaMontosLocalidades.className = "graficasVisible";
