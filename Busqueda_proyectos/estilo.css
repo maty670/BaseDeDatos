@@ -60,17 +60,18 @@ body::-webkit-scrollbar{
   
 /* Track */
 body::-webkit-scrollbar-track{
-    background:#888; 
+    background:#666; 
 }
    
 /* Handle */
 body::-webkit-scrollbar-thumb{
-    background: #557696;
+    background: #00000080;
+    border-radius: 5px;
 }
   
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover{
-    background: #41678d;
+    background: #000000bb;
 }
 
 

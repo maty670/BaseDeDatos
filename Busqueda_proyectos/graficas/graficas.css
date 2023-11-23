@@ -140,6 +140,31 @@ body {
 	animation-duration: 1s;
 }
 
+/* width */
+.resultados::-webkit-scrollbar {
+	width: 15px;
+	height: 15px;
+  }
+	
+  /* Track */
+  .resultados::-webkit-scrollbar-track {
+	background:#666; 
+  }
+	 
+  /* Handle */
+  .resultados::-webkit-scrollbar-thumb {
+	background: #00000080;
+	border-radius: 5px;
+  }
+	
+  /* Handle on hover */
+  .resultados::-webkit-scrollbar-thumb:hover {
+	background: #000000bb;
+  }
+
+
+
+
 @keyframes slidein {
 	from {
 		margin: 100px auto;

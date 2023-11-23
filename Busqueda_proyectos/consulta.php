@@ -67,7 +67,7 @@
 	if($tabla_completa=='SI'){
 	$consulta="  SELECT `Codigo`,`Titulo`,`Beneficiario`,`Beneficiario_Correo`,`Beneficiario_Localidad`,`Radicacion_Departamento`,`Radicacion_Localidad`,`Director`,
 				`Director_Correo`,`Organizacion_Vinculante`,
-				`Organizacion_Vinculante_Correo`,`Palabras_Claves`,
+				`Organizacion_Vinculante_Correo`, `Area_Estrategica`,`Palabras_Claves`,
 				replace(replace(replace(format(`Monto_ANR`,2),'.','-'),',','.'),'-',',') AS `Monto_ANR`,
 				`Convocatoria`,`Año`,`Admisibilidad`,`Financiacion`,`Puntaje`,`Modalidad`
 				 FROM  `Proyectos`
@@ -75,7 +75,7 @@
 				 AND (Financiacion LIKE '$f%' AND Admisibilidad LIKE '$a%' AND Modalidad LIKE '%$m%')";
 	}else{
 	$consulta=" SELECT `Codigo`,`Titulo`,`Beneficiario`,`Beneficiario_Correo`,`Beneficiario_Localidad`,`Radicacion_Departamento`,`Radicacion_Localidad`,`Director`,
-				`Director_Correo`,`Organizacion_Vinculante`,`Organizacion_Vinculante_Correo`,`Palabras_Claves`,
+				`Director_Correo`,`Organizacion_Vinculante`,`Organizacion_Vinculante_Correo`, `Area_Estrategica`,`Palabras_Claves`,
 				replace(replace(replace(format(`Monto_ANR`,2),'.','-'),',','.'),'-',',') AS `Monto_ANR`,
 				`Convocatoria`,`Año`,`Admisibilidad`,`Financiacion`,`Puntaje`,`Modalidad`
 				FROM `Proyectos`

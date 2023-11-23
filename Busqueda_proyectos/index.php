@@ -109,6 +109,7 @@ if(isset($_POST['buscar'])){
                         <option value="Radicacion_Localidad"<?php if($op == 'Radicacion_Localidad'){echo("selected");}?>> Localidad de radicación del proyecto </option>
                         <option <?php if($op == 'Director' || ($op=="" AND $i==2)){echo("selected");}?>> Director </option>
                         <option value="Organizacion_Vinculante"<?php if($op == 'Organizacion_Vinculante'){echo("selected");}?>> Organizacion Vinculante </option>
+                        <option value="Area_Estrategica"<?php if($op == 'Area_Estrategica'){echo("selected");}?>> Area Estratégica </option>
                         <option value="Palabras_Claves"<?php if($op == 'Palabras_Claves' || ($op=="" AND $i==3)){echo("selected");}?>> Palabras Claves </option>
                         <option <?php if($op == 'Convocatoria' || ($op=="" AND $i==4)){echo("selected");}?>> Convocatoria </option>
                     </select>

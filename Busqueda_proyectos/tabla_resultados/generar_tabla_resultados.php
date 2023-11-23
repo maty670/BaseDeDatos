@@ -138,6 +138,7 @@
             let Radicacion_Localidad = resaltarFrase(registros[i].Radicacion_Localidad,"Radicacion_Localidad")
             let Director = resaltarFrase(registros[i].Director,"Director")
             let Organizacion_Vinculante = resaltarFrase(registros[i].Organizacion_Vinculante,"Organizacion_Vinculante")
+            let Area_Estrategica = resaltarFrase(registros[i].Area_Estrategica,"Area_Estrategica")
             let Palabras_Claves = resaltarFrase(registros[i].Palabras_Claves,"Palabras_Claves")
             let Convocatoria = resaltarFrase(registros[i].Convocatoria,"Convocatoria")
             let Admisibilidad = resaltarFrase(registros[i].Admisibilidad,"Admisibilidad")
@@ -165,6 +166,7 @@
 			<td class="celda l1">${registros[i].Director_Correo}</td>
             <td class="celda l1">${Organizacion_Vinculante}</td>
 			<td class="celda l2">${registros[i].Organizacion_Vinculante_Correo}</td>
+            <td class="celda l2">${Area_Estrategica}</td>
             <td class="celda l2">${Palabras_Claves}</td>
             <td class="celda center">${Monto_ANR}</td>
             <td class="celda l1">${Convocatoria}</td>

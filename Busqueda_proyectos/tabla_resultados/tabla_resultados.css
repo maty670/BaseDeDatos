@@ -7,7 +7,7 @@
     --height_titulo:2rem;
     
     --w1:9rem;
-    --w2:10rem;
+    --w2:11rem;
     --w3:11rem;
     --w4:14.5rem;
     --fontSize_titulo:1rem;
@@ -22,25 +22,34 @@
 
 
 /* width */
-  .contenedor_tabla::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
-  }
+.contenedor_tabla::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
   
-  /* Track */
-  .contenedor_tabla::-webkit-scrollbar-track {
-    background:#888; 
-  }
+/* Track */
+.contenedor_tabla::-webkit-scrollbar-track {
+  background:#666; 
+}
    
-  /* Handle */
-  .contenedor_tabla::-webkit-scrollbar-thumb {
-    background: #557696;
-  }
+/* Handle */
+.contenedor_tabla::-webkit-scrollbar-thumb {
+  background: #00000080;
+  border-radius: 5px;
+}
   
-  /* Handle on hover */
-  .contenedor_tabla::-webkit-scrollbar-thumb:hover {
-    background: #41678d;
-  }
+/* Handle on hover */
+.contenedor_tabla::-webkit-scrollbar-thumb:hover {
+  background: #000000bb;
+}
+
+
+
+
+
+
+
+
 
 
 

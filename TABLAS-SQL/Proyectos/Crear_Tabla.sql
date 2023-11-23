@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS Proyectos (
     `Director_Correo` VARCHAR(255) DEFAULT '-',
     `Organizacion_Vinculante` VARCHAR(255) DEFAULT '-' ,
 	`Organizacion_Vinculante_Correo` VARCHAR(255) DEFAULT '-',
+	`Area_Estrategica` VARCHAR(255) DEFAULT '-',
 	`Palabras_Claves` VARCHAR(255) DEFAULT '-',
     `Monto_ANR` DECIMAL(15,2),
     `Convocatoria` VARCHAR(255) DEFAULT '-',
@@ -34,6 +35,7 @@ MODIFY COLUMN Director TEXT,
 MODIFY COLUMN Director_Correo TEXT,
 MODIFY COLUMN Organizacion_Vinculante TEXT,
 MODIFY COLUMN Organizacion_Vinculante_Correo TEXT,
+MODIFY COLUMN Area_Estrategica TEXT,
 MODIFY COLUMN Palabras_Claves TEXT,
 MODIFY COLUMN Convocatoria TEXT,
 MODIFY COLUMN Admisibilidad TEXT,
@@ -92,6 +94,10 @@ BEGIN
 	
 	IF NEW.Organizacion_Vinculante_Correo IS NULL THEN
         SET NEW.Organizacion_Vinculante_Correo = '-';
+    END IF;
+	
+	IF NEW.Area_Estrategica IS NULL THEN
+        SET NEW.Area_Estrategica = '-';
     END IF;
 	
 	IF NEW.Palabras_Claves IS NULL THEN
