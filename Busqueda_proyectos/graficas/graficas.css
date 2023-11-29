@@ -184,6 +184,7 @@ body {
 	color: white;
 	padding: 5px 15px;
 	background-color: rgba(71, 113, 122, 0.7);
+	white-space: nowrap;
 }
 
 

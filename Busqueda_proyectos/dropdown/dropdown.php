@@ -143,19 +143,27 @@
 
     
     //////// Obtener desde PHP los listados de 'consultas_dropdown.php' ////////
-    var ld = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Directores);?>).replace(/null/g,'""'));
-    var lc = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Convocatorias);?>).replace(/null/g,'""'));
+    var listado_dir = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Directores);?>).replace(/null/g,'""'));
+    var listado_conv = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Convocatorias);?>).replace(/null/g,'""'));
+    var listado_area = JSON.parse(JSON.stringify(<?php echo json_encode($array_listadoArea);?>).replace(/null/g,'""'));
     
     
     
     listado_Directores=[];
-    for (x of ld){  listado_Directores.push(x.Director)};
+    for (x of listado_dir){  listado_Directores.push(x.Director)};
 
     listado_Convocatorias=[];
-    for (x of lc){  listado_Convocatorias.push(x.Convocatoria)};
+    for (x of listado_conv){  listado_Convocatorias.push(x.Convocatoria)};
 
+    listado_Area=[];
+    for (var [clave, valor] of Object.entries(listado_area)) {
+        listado_Area.push(valor);
+    }
+
+    // iniciar_actionListener("Nombre id del select",listado_de_elementos);
     iniciar_actionListener("Director",listado_Directores);
     iniciar_actionListener("Convocatoria",listado_Convocatorias);
+    iniciar_actionListener("Area_Estrategica",listado_Area);
     cerrar_dropdown();
 
     

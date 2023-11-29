@@ -34,10 +34,10 @@
             $modo=$_COOKIE['modo'];
 
 
-            $consulta="SELECT `Codigo`,`Modalidad`,`Titulo`,`Beneficiario`,`Beneficiario_Correo`,`Beneficiario_Departamento`,`Beneficiario_Localidad`,`Director`,
-                              `Director_Correo`,`Organizacion_Vinculante`,`Organizacion_Vinculante_Correo`,
+            $consulta="SELECT `Codigo`,`Titulo`,`Beneficiario`,`Beneficiario_Correo`,`Beneficiario_Localidad`,`Radicacion_Departamento`,`Radicacion_Localidad`,`Director`,
+                              `Director_Correo`,`Organizacion_Vinculante`,`Organizacion_Vinculante_Correo`, `Area_Estrategica`,`Palabras_Claves`,
                               replace(replace(replace(format(`Monto_ANR`,2),'.','-'),',','.'),'-',',') AS `Monto_ANR`,
-                              `Convocatoria`,`Año`,`Admisibilidad`,`Financiacion`,`Puntaje`
+                              `Convocatoria`,`Año`,`Admisibilidad`,`Financiacion`,`Puntaje`,`Modalidad`
                               FROM `Proyectos`
                               WHERE ($columna1 LIKE '%$palabra1%' $modo $columna2 LIKE '%$palabra2%' $modo $columna3 LIKE '%$palabra3%' $modo $columna4 LIKE '%$palabra4%'   $modo $columna5 LIKE '%$palabra5%')
                               AND (Año >= $aMin  AND Año <= $aMax)
