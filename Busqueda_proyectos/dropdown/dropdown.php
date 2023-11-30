@@ -146,6 +146,7 @@
     var listado_dir = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Directores);?>).replace(/null/g,'""'));
     var listado_conv = JSON.parse(JSON.stringify(<?php echo json_encode($listado_Convocatorias);?>).replace(/null/g,'""'));
     var listado_area = JSON.parse(JSON.stringify(<?php echo json_encode($array_listadoArea);?>).replace(/null/g,'""'));
+    var listado_benef_loc = JSON.parse(JSON.stringify(<?php echo json_encode($array_Benef_Loc);?>).replace(/null/g,'""'));
     
     
     
@@ -155,6 +156,11 @@
     listado_Convocatorias=[];
     for (x of listado_conv){  listado_Convocatorias.push(x.Convocatoria)};
 
+    listado_BenefLoc=[];
+    for (var [clave, valor] of Object.entries(listado_benef_loc)) {
+        listado_BenefLoc.push(valor);
+    }
+
     listado_Area=[];
     for (var [clave, valor] of Object.entries(listado_area)) {
         listado_Area.push(valor);
@@ -163,6 +169,7 @@
     // iniciar_actionListener("Nombre id del select",listado_de_elementos);
     iniciar_actionListener("Director",listado_Directores);
     iniciar_actionListener("Convocatoria",listado_Convocatorias);
+    iniciar_actionListener("Beneficiario_Localidad",listado_BenefLoc);
     iniciar_actionListener("Area_Estrategica",listado_Area);
     cerrar_dropdown();
 
